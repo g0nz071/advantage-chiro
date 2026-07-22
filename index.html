@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advantage Chiropractic — Longview &amp; Battle Ground, WA</title>
+<meta name="description" content="Advantage Chiropractic serves Longview and Battle Ground, WA with drug-free chiropractic care, massage, acupuncture, pediatric and prenatal care for the whole family.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --forest:#1f4a41;
+    --forest-dark:#153531;
+    --sage:#e9efe6;
+    --sage-2:#d9e6d6;
+    --cream:#faf6ee;
+    --coral:#d97a52;
+    --coral-dark:#9c4d2a;
+    --ink:#1c2622;
+    --ink-soft:#4a5751;
+    --line:#e2dccd;
+    --white:#ffffff;
+    --radius:18px;
+    --shadow: 0 20px 45px -25px rgba(20,40,35,0.35);
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Inter',sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    line-height:1.12;
+    margin:0 0 .5em;
+    color:var(--forest-dark);
+    letter-spacing:-0.01em;
+  }
+  p{margin:0 0 1em;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--coral-dark);margin-bottom:14px;
+  }
+  .eyebrow::before{content:"";width:22px;height:2px;background:var(--coral);display:inline-block;border-radius:2px;}
+  section{padding:96px 0;}
+  .section-head{max-width:640px;margin-bottom:52px;}
+  .section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
+  .lede{color:var(--ink-soft);font-size:17.5px;}
+
+  /* Buttons */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:14px 26px;border-radius:100px;font-weight:600;font-size:15px;
+    border:1.5px solid transparent;cursor:pointer;transition:.2s ease;white-space:nowrap;
+  }
+  .btn-primary{background:var(--coral-dark);color:#fff;}
+  .btn-primary:hover{background:#7c3d20;transform:translateY(-1px);}
+  .btn-outline{border-color:rgba(255,255,255,.55);color:#fff;}
+  .btn-outline:hover{background:rgba(255,255,255,.12);}
+  .btn-ghost{border-color:var(--forest);color:var(--forest);}
+  .btn-ghost:hover{background:var(--forest);color:#fff;}
+  .btn-sm{padding:10px 18px;font-size:13.5px;}
+  .btn-block{width:100%;}
+
+  /* Header */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(250,246,238,.92);backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .topbar{
+    display:flex;justify-content:space-between;align-items:center;
+    font-size:12.5px;color:var(--ink-soft);padding:9px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .topbar a{color:var(--forest-dark);font-weight:600;}
+  .topbar .tb-left{display:flex;gap:22px;flex-wrap:wrap;}
+  .topbar .tb-left span{color:var(--ink-soft);font-weight:400;}
+  .navrow{display:flex;align-items:center;justify-content:space-between;padding:16px 0;}
+  .logo{display:flex;align-items:center;gap:11px;font-family:'Fraunces',serif;font-weight:700;font-size:21px;color:var(--forest-dark);}
+  .logo img{height:44px;width:auto;display:block;}
+  .logo small{display:block;font-family:'Inter',sans-serif;font-weight:500;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--coral-dark);}
+  nav.mainnav{display:flex;gap:30px;align-items:center;}
+  nav.mainnav a{font-weight:600;font-size:14.5px;color:var(--ink);position:relative;padding:4px 0;}
+  nav.mainnav a:hover{color:var(--coral-dark);}
+  .nav-cta{display:flex;gap:10px;align-items:center;}
+  .hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;}
+  .hamburger span{display:block;width:24px;height:2px;background:var(--forest-dark);margin:5px 0;border-radius:2px;}
+
+  /* Hero */
+  .hero{
+    position:relative;overflow:hidden;
+    background:radial-gradient(1100px 550px at 82% -10%, #2b5e52 0%, var(--forest) 45%, var(--forest-dark) 100%);
+    color:#fff;padding:88px 0 0;
+  }
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;position:relative;z-index:2;}
+  .hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:7px 15px;border-radius:100px;font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:22px;}
+  .hero h1{color:#fff;font-size:clamp(34px,4.6vw,54px);margin-bottom:22px;}
+  .hero h1 em{color:#f2c9b0;font-style:normal;}
+  .hero p.lede{color:#dfe9e4;font-size:18px;max-width:480px;}
+  .hero-actions{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap;}
+  .hero-stats{display:flex;gap:28px;margin-top:52px;padding-top:26px;border-top:1px solid rgba(255,255,255,.18);flex-wrap:wrap;}
+  .hero-stats div b{display:block;font-family:'Fraunces',serif;font-size:26px;color:#fff;}
+  .hero-stats div span{font-size:12.5px;color:#c9d8d1;}
+  .hero-art{position:relative;height:420px;}
+  .hero-card{
+    position:absolute;background:#fff;border-radius:16px;padding:18px 20px;box-shadow:0 25px 50px -20px rgba(0,0,0,.4);
+    color:var(--ink);width:230px;
+  }
+  .hero-card.c1{top:6%;right:6%;}
+  .hero-card.c2{bottom:8%;left:0;width:250px;}
+  .hero-card b{display:block;font-family:'Fraunces',serif;color:var(--forest-dark);font-size:15px;margin-bottom:4px;}
+  .hero-card span{font-size:12.5px;color:var(--ink-soft);}
+  .hero-photo{
+    position:absolute;inset:8% 14%;border-radius:24px;
+    background:
+      linear-gradient(160deg, rgba(22,51,44,.15), rgba(15,30,26,.55)),
+      url('images/team-doctors-group.jpg') center/cover no-repeat;
+    border:1px solid rgba(255,255,255,.25);
+    display:flex;align-items:flex-end;justify-content:center;
+    box-shadow:var(--shadow);
+  }
+  .hero-photo svg{width:46%;opacity:.85;}
+  .hero-photo-cap{background:rgba(12,26,22,.72);color:#fff;font-size:12px;font-weight:600;padding:8px 14px;border-radius:100px;margin-bottom:14px;backdrop-filter:blur(4px);}
+  .wave{display:block;width:100%;position:relative;z-index:1;margin-top:60px;line-height:0;}
+
+  /* Trust strip */
+  .trust{background:var(--forest-dark);padding:0;}
+  .trust .wrap{display:flex;flex-wrap:wrap;gap:0;}
+  .trust .item{flex:1 1 200px;padding:26px 28px;text-align:center;color:#fff;border-left:1px solid rgba(255,255,255,.12);}
+  .trust .item:first-child{border-left:none;}
+  .trust .item b{display:block;font-family:'Fraunces',serif;font-size:24px;}
+  .trust .item span{font-size:12.5px;color:#c9d8d1;}
+
+  /* About */
+  .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start;}
+  .about-visual{
+    background:var(--sage);border-radius:var(--radius);padding:34px;position:sticky;top:110px;
+  }
+  .value-row{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--sage-2);font-size:14.5px;color:var(--forest-dark);font-weight:600;}
+  .value-row:last-child{border-bottom:none;}
+  .value-row .num{color:var(--coral);font-family:'Fraunces',serif;font-weight:600;}
+  .about-copy p{font-size:16.5px;color:var(--ink-soft);}
+  .quote-block{
+    background:var(--white);border-left:4px solid var(--coral);padding:22px 26px;border-radius:0 14px 14px 0;
+    margin:28px 0;box-shadow:var(--shadow);
+  }
+  .quote-block p{font-family:'Fraunces',serif;font-size:19px;color:var(--forest-dark);font-style:italic;margin-bottom:6px;}
+  .quote-block span{font-size:13px;color:var(--ink-soft);font-weight:600;}
+
+  /* Services */
+  .services{background:var(--sage);}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .svc-card{
+    background:#fff;border-radius:16px;padding:26px 24px;box-shadow:var(--shadow);
+    transition:.2s ease;border:1px solid transparent;
+  }
+  .svc-card:hover{transform:translateY(-4px);border-color:var(--coral);}
+  .svc-icon{
+    width:46px;height:46px;border-radius:12px;background:var(--sage);display:flex;align-items:center;justify-content:center;margin-bottom:16px;
+  }
+  .svc-icon svg{width:24px;height:24px;stroke:var(--forest);}
+  .svc-icon.photo{background-size:cover;background-position:center;width:100%;height:120px;border-radius:12px;margin-bottom:16px;}
+  .svc-card h3{font-size:18px;margin-bottom:8px;}
+  .svc-card p{font-size:14.5px;color:var(--ink-soft);margin-bottom:14px;}
+  .svc-card a{font-size:13.5px;font-weight:700;color:var(--coral-dark);}
+  .svc-more{text-align:center;margin-top:40px;}
+
+  /* Team */
+  .team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .team-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:var(--shadow);}
+  .team-photo{
+    height:230px;background-size:cover;background-position:center top;
+  }
+  .team-body{padding:20px 22px 24px;}
+  .team-body h3{font-size:17px;margin-bottom:2px;}
+  .team-role{font-size:12.5px;font-weight:700;color:var(--coral-dark);text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px;display:block;}
+  .team-body p{font-size:14px;color:var(--ink-soft);margin-bottom:0;}
+  .bio-todo{background:var(--sage);border:1px dashed var(--sage-2);border-radius:8px;padding:8px 10px;font-size:12.5px;font-style:italic;color:var(--ink-soft);}
+  .loc-tag{
+    display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:700;color:var(--forest);background:var(--sage);
+    padding:4px 10px;border-radius:100px;margin-top:12px;
+  }
+  .team-banner{width:100%;height:280px;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:48px;}
+  .team-staff{margin-top:44px;display:grid;grid-template-columns:repeat(5,1fr);gap:16px;}
+  .gallery-strip{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:56px;}
+  .gallery-strip img{width:100%;height:130px;object-fit:cover;border-radius:12px;box-shadow:var(--shadow);}
+  .staff-chip{background:#fff;border-radius:12px;padding:16px;text-align:center;box-shadow:var(--shadow);}
+  .staff-chip .init{
+    width:52px;height:52px;border-radius:50%;background:var(--forest) center/cover no-repeat;color:#fff;display:flex;align-items:center;justify-content:center;
+    margin:0 auto 10px;font-family:'Fraunces',serif;font-weight:600;
+  }
+  .staff-chip b{display:block;font-size:13.5px;}
+  .staff-chip span{font-size:11.5px;color:var(--ink-soft);}
+
+  /* Story */
+  .story{background:var(--forest);color:#fff;}
+  .story .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center;}
+  .story h2{color:#fff;}
+  .story .lede{color:#dfe9e4;}
+  .story-copy p{color:#e6efe9;font-size:15.5px;}
+  .story-badge{
+    background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:26px;
+  }
+  .story-badge .big{font-family:'Fraunces',serif;font-size:48px;color:#f2c9b0;line-height:1;}
+  .story-badge span{font-size:13px;color:#c9d8d1;display:block;margin-top:8px;}
+  .story-stats{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px;}
+
+  /* Testimonials */
+  .tstack{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .tcard{background:#fff;border-radius:16px;padding:26px;box-shadow:var(--shadow);}
+  .tcard .stars{color:var(--coral-dark);letter-spacing:2px;margin-bottom:12px;font-size:14px;}
+  .tcard p{font-size:14.5px;color:var(--ink-soft);}
+  .tcard .t-who{display:flex;align-items:center;gap:10px;margin-top:16px;}
+  .tcard .t-avatar{width:34px;height:34px;border-radius:50%;background:var(--forest);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:13px;font-weight:600;flex-shrink:0;}
+  .tcard span{font-size:13px;font-weight:700;color:var(--forest-dark);}
+  .t-more{text-align:center;margin-top:36px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+  #moreReviews{display:none;margin-top:22px;}
+  #moreReviews.open{display:grid;}
+
+  /* New patients */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:56px;}
+  .step{position:relative;padding-left:0;}
+  .step .snum{
+    width:38px;height:38px;border-radius:10px;background:var(--forest);color:#fff;display:flex;align-items:center;justify-content:center;
+    font-family:'Fraunces',serif;font-weight:600;margin-bottom:16px;
+  }
+  .step h3{font-size:17px;}
+  .step p{font-size:14.5px;color:var(--ink-soft);}
+  .np-panel{
+    background:var(--sage);border-radius:var(--radius);padding:36px;display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:center;
+  }
+  .pay-list{list-style:none;padding:0;margin:16px 0;display:flex;flex-wrap:wrap;gap:10px;}
+  .pay-list li{background:#fff;padding:8px 14px;border-radius:100px;font-size:13px;font-weight:600;color:var(--forest-dark);border:1px solid var(--sage-2);}
+
+  /* Events */
+  .event-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+  .event-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;}
+  .event-img{height:150px;background-size:cover;background-position:center;}
+  .event-body{padding:22px 24px 26px;}
+  .event-tag{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--coral-dark);margin-bottom:6px;display:block;}
+  .event-body h3{font-size:18px;margin-bottom:8px;}
+  .event-body p{font-size:14px;color:var(--ink-soft);}
+  .event-note{font-size:12px;color:var(--ink-soft);font-style:italic;margin-top:10px;}
+
+  /* Locations */
+  .locations{background:var(--forest-dark);}
+  .locations .section-head h2{color:#fff;}
+  .locations .section-head .lede{color:#c9d8d1;}
+  .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;}
+  .loc-card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);}
+  .loc-map{height:190px;background:var(--sage-2);}
+  .loc-map iframe{width:100%;height:100%;border:0;display:block;}
+  .loc-body{padding:26px 28px 30px;}
+  .loc-badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--coral-dark);background:var(--sage);padding:4px 11px;border-radius:100px;margin-bottom:10px;}
+  .loc-body h3{font-size:20px;margin-bottom:4px;}
+  .loc-addr{font-size:14px;color:var(--ink-soft);margin-bottom:14px;}
+  .loc-phone{font-weight:700;color:var(--coral-dark);font-size:15px;margin-bottom:18px;display:inline-block;}
+  .hours-table{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:20px;}
+  .hours-table tr{border-bottom:1px solid var(--line);}
+  .hours-table tr:last-child{border-bottom:none;}
+  .hours-table td{padding:7px 0;color:var(--ink-soft);}
+  .hours-table td:first-child{font-weight:600;color:var(--forest-dark);}
+  .hours-table td:last-child{text-align:right;}
+
+  /* Contact */
+  .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;}
+  .contact-info .ci-row{display:flex;gap:14px;margin-bottom:22px;}
+  .ci-icon{width:40px;height:40px;border-radius:10px;background:var(--sage);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .ci-icon svg{width:20px;height:20px;stroke:var(--forest);}
+  .ci-row b{display:block;font-size:14.5px;color:var(--forest-dark);}
+  .ci-row span, .ci-row a{font-size:13.5px;color:var(--ink-soft);}
+  .social-row{display:flex;gap:10px;margin-top:26px;}
+  .social-row a{width:38px;height:38px;border-radius:50%;background:var(--sage);display:flex;align-items:center;justify-content:center;}
+  .social-row svg{width:17px;height:17px;stroke:var(--forest);}
+  form.contact-form{background:#fff;border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
+  .form-field{display:flex;flex-direction:column;gap:6px;}
+  .form-field.full{grid-column:1/-1;}
+  .form-field label{font-size:12.5px;font-weight:700;color:var(--forest-dark);}
+  .form-field input, .form-field select, .form-field textarea{
+    border:1.5px solid var(--line);border-radius:10px;padding:11px 13px;font-family:inherit;font-size:14.5px;background:var(--cream);
+  }
+  .form-field input:focus, .form-field select:focus, .form-field textarea:focus{outline:none;border-color:var(--forest);}
+  .form-note{font-size:12px;color:var(--ink-soft);margin-top:14px;}
+  .form-success{display:none;background:var(--sage);border-radius:10px;padding:14px 16px;font-size:13.5px;color:var(--forest-dark);font-weight:600;margin-top:14px;}
+
+  /* CTA band */
+  .cta-band{background:var(--coral-dark);color:#fff;text-align:center;}
+  .cta-band h2{color:#fff;margin-bottom:14px;}
+  .cta-band p{color:#fbe6db;max-width:520px;margin:0 auto 26px;}
+  .cta-band .btn-primary{background:var(--forest-dark);}
+  .cta-band .btn-primary:hover{background:#0e2622;}
+  .cta-band .btn-outline{border-color:rgba(255,255,255,.6);}
+
+  /* Footer */
+  footer{background:var(--forest-dark);color:#c9d8d1;padding:64px 0 26px;font-size:14px;}
+  .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px;}
+  .foot-logo{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-size:19px;color:#fff;font-weight:700;margin-bottom:14px;}
+  .foot-logo .mark{width:34px;height:34px;border-radius:9px;background:var(--coral);display:flex;align-items:center;justify-content:center;}
+  .foot-logo .mark svg{width:18px;height:18px;}
+  footer h4{color:#fff;font-family:'Inter',sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;}
+  footer ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;}
+  footer a:hover{color:#fff;}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12.5px;color:#9fb3ab;}
+
+  /* Prototype banner */
+  .proto-banner{
+    background:#141d1a;color:#fff;font-size:12.5px;text-align:center;padding:9px 14px;
+  }
+  .proto-banner b{color:#f2c9b0;}
+
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease, transform .6s ease;}
+  .reveal.in{opacity:1;transform:none;}
+
+  @media (max-width: 980px){
+    .hero .wrap{grid-template-columns:1fr;}
+    .hero-art{display:none;}
+    .about-grid,.story .wrap,.contact-grid,.np-panel{grid-template-columns:1fr;}
+    .about-visual{position:static;}
+    .svc-grid{grid-template-columns:repeat(2,1fr);}
+    .team-grid{grid-template-columns:repeat(2,1fr);}
+    .team-staff{grid-template-columns:repeat(3,1fr);}
+    .gallery-strip{grid-template-columns:repeat(3,1fr);}
+    .tstack{grid-template-columns:1fr;}
+    .steps{grid-template-columns:1fr;}
+    .event-grid{grid-template-columns:1fr;}
+    .loc-grid{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width: 760px){
+    nav.mainnav, .nav-cta .btn-ghost{display:none;}
+    .hamburger{display:block;}
+    .topbar{display:none;}
+    section{padding:64px 0;}
+    .svc-grid{grid-template-columns:1fr;}
+    .team-grid{grid-template-columns:1fr;}
+    .team-staff{grid-template-columns:repeat(2,1fr);}
+    .gallery-strip{grid-template-columns:repeat(2,1fr);}
+    .form-row{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr;gap:28px;}
+    .trust .item{border-left:none;border-top:1px solid rgba(255,255,255,.12);}
+    .trust .item:first-child{border-top:none;}
+  }
+
+  /* Mobile nav drawer */
+  .mobile-nav{
+    position:fixed;inset:0 0 0 auto;width:78%;max-width:320px;background:#fff;z-index:100;
+    box-shadow:-10px 0 40px rgba(0,0,0,.2);padding:26px 24px;transform:translateX(100%);transition:transform .3s ease;
+    display:flex;flex-direction:column;gap:6px;overflow-y:auto;
+  }
+  .mobile-nav.open{transform:translateX(0);}
+  .mobile-nav a{padding:13px 4px;border-bottom:1px solid var(--line);font-weight:600;}
+  .scrim{position:fixed;inset:0;background:rgba(10,20,17,.4);z-index:99;opacity:0;pointer-events:none;transition:opacity .3s ease;}
+  .scrim.open{opacity:1;pointer-events:auto;}
+
+  /* Accessibility */
+  .skip-link{
+    position:absolute;left:-9999px;top:auto;background:var(--forest-dark);color:#fff;padding:14px 20px;
+    border-radius:0 0 10px 0;z-index:200;font-weight:700;font-size:14px;
+  }
+  .skip-link:focus{left:0;top:0;}
+  a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible{
+    outline:3px solid var(--coral);outline-offset:2px;
+  }
+</style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<div class="proto-banner">🛠️ <b>Working prototype</b> — draft content pulled from myadvantagechiro.com for review. Not the live site.</div>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="wrap topbar">
+    <div class="tb-left">
+      <span>Longview: <a href="tel:3604256620">(360) 425-6620</a></span>
+      <span>Battle Ground: <a href="tel:3603695150">(360) 369-5150</a></span>
+    </div>
+    <div class="tb-left">
+      <span>Mon–Fri · Two locations serving SW Washington</span>
+    </div>
+  </div>
+  <div class="wrap navrow">
+    <a href="#home" class="logo">
+      <img src="https://myadvantagechiro.com/wp-content/uploads/2023/09/Chiropractic-Longview-WA-Advantage-Chiropractic-SB-Logo.webp" alt="Advantage Chiropractic logo">
+    </a>
+    <nav class="mainnav">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#team">Our Team</a>
+      <a href="#new-patients">New Patients</a>
+      <a href="#events">Events</a>
+      <a href="#locations">Locations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-ghost btn-sm">Call Us</a>
+      <a href="#new-patients" class="btn btn-primary btn-sm">Request Appointment</a>
+      <button class="hamburger" id="hamBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="scrim" id="scrim"></div>
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#team">Our Team</a>
+  <a href="#new-patients">New Patients</a>
+  <a href="#events">Events</a>
+  <a href="#locations">Locations</a>
+  <a href="#contact">Contact</a>
+  <a href="#new-patients" class="btn btn-primary" style="margin-top:14px;border:none;">Request Appointment</a>
+</div>
+
+<main id="main-content">
+<!-- ===== HERO ===== -->
+<section id="home" class="hero" style="padding-bottom:0;">
+  <div class="wrap">
+    <div>
+      <div class="hero-eyebrow">✦ 23+ years in Longview &amp; Battle Ground</div>
+      <h1>Chiropractic care that treats the <em>cause</em>, not just the pain.</h1>
+      <p class="lede">Drug-free chiropractic, massage and family wellness care from a team that explains every step before they adjust. New patients welcome at both locations.</p>
+      <div class="hero-actions">
+        <a href="#new-patients" class="btn btn-primary">Request an Appointment</a>
+        <a href="#services" class="btn btn-outline">Explore Services</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>23+</b><span>Years serving the community</span></div>
+        <div><b>6</b><span>Doctors on staff</span></div>
+        <div><b>2</b><span>Locations — Longview &amp; Battle Ground</span></div>
+        <div><b>1000s</b><span>Families cared for</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="hero-photo">
+        <span class="hero-photo-cap">📍 Our team, Longview office</span>
+      </div>
+      <div class="hero-card c1"><b>Same-week visits</b><span>Most new patients seen within days at either office.</span></div>
+      <div class="hero-card c2"><b>Kathy's migraine story</b><span>"The headache was gone by the time I got to my car." — see her story below</span></div>
+    </div>
+  </div>
+  <div style="height:70px;"></div>
+</section>
+
+<!-- ===== TRUST STRIP ===== -->
+<div class="trust">
+  <div class="wrap">
+    <div class="item"><b>Chiropractic Care</b><span>Diversified &amp; Activator Method</span></div>
+    <div class="item"><b>Massage Therapy</b><span>Licensed massage therapists</span></div>
+    <div class="item"><b>Pediatric &amp; Prenatal</b><span>Gentle, family-first care</span></div>
+    <div class="item"><b>Acupuncture &amp; Reiki</b><span>Whole-body wellness</span></div>
+  </div>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-visual reveal">
+      <div class="eyebrow">How we practice</div>
+      <h2 style="font-size:22px;">Four commitments we hold ourselves to.</h2>
+      <div style="margin-top:20px;">
+        <div class="value-row"><span class="num">01</span> We treat the cause, not just the symptom</div>
+        <div class="value-row"><span class="num">02</span> We explain every step before we adjust</div>
+        <div class="value-row"><span class="num">03</span> We build your care plan around your life</div>
+        <div class="value-row"><span class="num">04</span> We show up for this community, on and off the table</div>
+      </div>
+    </div>
+    <div class="about-copy reveal">
+      <div class="section-head" style="margin-bottom:26px;">
+        <div class="eyebrow">About Advantage Chiropractic</div>
+        <h2>Restoring well-being, without drugs or excuses.</h2>
+      </div>
+      <p>After 23 years of practice in Longview, our doctors and team are dedicated to helping this community move better, hurt less, and rely a little less on medication for problems the body can often resolve on its own.</p>
+      <p>We focus on correcting the root cause of pain — through hands-on adjustment, movement, and honest guidance — rather than just easing the symptom in front of us. No overpromising, no pressure, just a clear plan you understand before you agree to it.</p>
+      <p>Our doctors are highly trained and specialized in injury recovery, pediatric care, prenatal care, athletic care, and whole-family wellness. We're deeply connected to this community, and that shapes how we practice.</p>
+      <div class="quote-block">
+        <p>"The staff at Advantage Chiropractic are wonderful. They focus on whole body care, including heart and soul healing."</p>
+        <span>— Jessica Z., patient</span>
+      </div>
+      <a href="#team" class="btn btn-ghost">Meet the doctors →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services" class="services">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;">What we offer</div>
+      <h2>Chiropractic &amp; wellness services</h2>
+      <p class="lede">If you're experiencing pain, we want to help — at the onset of symptoms, before they progress. Here's how our team supports your whole-body health.</p>
+    </div>
+    <div class="svc-grid">
+
+      <div class="svc-card reveal">
+        <div class="svc-icon photo" style="background-image:url('https://myadvantagechiro.com/wp-content/uploads/2023/10/chiropracticcare_img.jpg');"></div>
+        <h3>Chiropractic Care</h3>
+        <p>Correcting misalignments so your spine and body work harmoniously — paired with stretching, exercise and a healthy diet.</p>
+        <a href="#new-patients">Request appointment →</a>
+      </div>
+
+      <div class="svc-card reveal">
+        <div class="svc-icon photo" style="background-image:url('https://myadvantagechiro.com/wp-content/uploads/photo-gallery/imported_from_media_libray/thumb/Chiropractic-Longview-WA-Massage-Center-Lobby.webp?bwg=1697810083');"></div>
+        <h3>Massage Therapy</h3>
+        <p>Manual manipulation of soft tissue to reduce stress, relax muscles, rehabilitate injuries and support overall wellness.</p>
+        <a href="#new-patients">Request appointment →</a>
+      </div>
+
+      <div class="svc-card reveal">
+        <div class="svc-icon photo" style="background-image:url('https://myadvantagechiro.com/wp-content/uploads/2023/10/pediatricchiropractic_img.jpg');"></div>
+        <h3>Pediatric Chiropractic</h3>
+        <p>Gentle care for kids that supports improved sleep, behavior, and immune function as their spine grows and develops.</p>
+        <a href="#new-patients">Request appointment →</a>
+      </div>
+
+      <div class="svc-card reveal">
+        <div class="svc-icon photo" style="background-image:url('https://myadvantagechiro.com/wp-content/uploads/2023/10/prepostnatalchiropractic_img.jpg');"></div>
+        <h3>Pre/Postnatal Care</h3>
+        <p>A conservative, gentle approach for pregnant and postpartum women — easing the physical strains of pregnancy safely.</p>
+        <a href="#new-patients">Request appointment →</a>
+      </div>
+
+      <div class="svc-card reveal">
+        <div class="svc-icon photo" style="background-image:url('https://myadvantagechiro.com/wp-content/uploads/2023/10/acupuncture_img.jpg');"></div>
+        <h3>Acupuncture</h3>
+        <p>A 4,000-year-old healing practice used to relieve pain and support conditions with minimal side effects.</p>
+        <a href="#new-patients">Request appointment →</a>
+      </div>
+
+      <div class="svc-card reveal">
+        <div class="svc-icon photo" style="background-image:url('https://myadvantagechiro.com/wp-content/uploads/2023/10/nutrition_img.jpg');"></div>
+        <h3>Nutritional Consultations</h3>
+        <p>Specific recommendations on nutritional supplements and healthy food choices to help you reach total health.</p>
+        <a href="#new-patients">Request appointment →</a>
+      </div>
+
+      <div class="svc-card reveal">
+        <div class="svc-icon photo" style="background-image:url('https://myadvantagechiro.com/wp-content/uploads/2023/10/customorthotics_img.jpg');"></div>
+        <h3>Custom Orthotics</h3>
+        <p>Biomedical insoles custom made to align your foot and ankle to your specific imbalance.</p>
+        <a href="#new-patients">Request appointment →</a>
+      </div>
+
+      <div class="svc-card reveal">
+        <div class="svc-icon photo" style="background-image:url('https://myadvantagechiro.com/wp-content/uploads/2023/10/correctiveexercises_img.jpg');"></div>
+        <h3>Corrective Exercises</h3>
+        <p>Targeted movements and postures that minimize compensation and improve biomechanical function.</p>
+        <a href="#new-patients">Request appointment →</a>
+      </div>
+
+      <div class="svc-card reveal">
+        <div class="svc-icon photo" style="background-image:url('https://myadvantagechiro.com/wp-content/uploads/2023/10/spinalscreenings_img.jpg');"></div>
+        <h3>Spinal Screenings</h3>
+        <p>Assessing vertebrae for abnormal movement to reduce nerve irritability and improve mobility.</p>
+        <a href="#new-patients">Request appointment →</a>
+      </div>
+
+      <div class="svc-card reveal">
+        <div class="svc-icon photo" style="background-image:url('https://myadvantagechiro.com/wp-content/uploads/2023/10/kinesiotape_img.jpg');"></div>
+        <h3>Kinesio Taping</h3>
+        <p>Skin-friendly rehabilitative taping that supports muscles and joints while preserving range of motion.</p>
+        <a href="#new-patients">Request appointment →</a>
+      </div>
+
+      <div class="svc-card reveal">
+        <div class="svc-icon photo" style="background-image:url('https://myadvantagechiro.com/wp-content/uploads/2023/10/workerscompensation_img.jpg');"></div>
+        <h3>Worker's Compensation</h3>
+        <p>Chiropractic care for on-the-job injuries — from spinal misalignment to soft-tissue injuries like whiplash.</p>
+        <a href="#new-patients">Request appointment →</a>
+      </div>
+
+      <div class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></div>
+        <h3>Reiki (New!)</h3>
+        <p>A gentle, non-invasive energy therapy that promotes relaxation, reduces stress, and supports natural healing.</p>
+        <a href="#new-patients">Request appointment →</a>
+      </div>
+
+    </div>
+    <div class="svc-more reveal">
+      <a href="#contact" class="btn btn-ghost">See all conditions we treat →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEAM ===== -->
+<section id="team">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;">Meet the team</div>
+      <h2>Doctors who live what they teach</h2>
+      <p class="lede">Six doctors across two locations, specialized in injury recovery, pediatric, prenatal and athletic care.</p>
+    </div>
+    <img class="team-banner reveal" src="images/team-full-staff-group.jpg" alt="The full Advantage Chiropractic team, doctors and staff, standing together outside the Longview office">
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <div class="team-photo" style="background-image:url('https://myadvantagechiro.com/wp-content/uploads/2025/10/Dr.-Anik.jpg');"></div>
+        <div class="team-body">
+          <h3>Dr. Anik St Martin, DC, DACCP</h3>
+          <span class="team-role">Pediatric Chiropractic Diplomate</span>
+          <p>23 years in practice in Longview. Cum Laude graduate of New York Chiropractic College; certified through the International Chiropractic Pediatric Association.</p>
+          <span class="loc-tag">📍 Longview</span>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-photo" style="background-image:url('images/dr-darin-shook.png');"></div>
+        <div class="team-body">
+          <h3>Dr. Darin Shook, DC</h3>
+          <span class="team-role">Chiropractor</span>
+          <p>Practicing in Longview since 2001. Believes everybody lives a better life with chiropractic care — avid skier, ultra marathoner and surfer.</p>
+          <span class="loc-tag">📍 Longview</span>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-photo" style="background-image:url('images/dr-john-dobosz.png');"></div>
+        <div class="team-body">
+          <h3>Dr. John Dobosz, DC</h3>
+          <span class="team-role">Chiropractor</span>
+          <p>National board certified; doctorate from University of Western States (2011). Believer in weekly adjustments, clean nutrition and daily movement.</p>
+          <span class="loc-tag">📍 Longview</span>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-photo" style="background-image:url('https://myadvantagechiro.com/wp-content/uploads/2025/10/Dr.-Jay.jpg');"></div>
+        <div class="team-body">
+          <h3>Dr. Jay Carlile, DC</h3>
+          <span class="team-role">Chiropractor</span>
+          <p>Former state champion powerlifter and wrestler. Trained in Gonstead, Thompson and Activator techniques after his own recovery from injury.</p>
+          <span class="loc-tag">📍 Longview</span>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-photo" style="background-image:url('https://myadvantagechiro.com/wp-content/uploads/2025/10/Dr.-Darryl.jpg');"></div>
+        <div class="team-body">
+          <h3>Dr. Darryl Coulombe, DC</h3>
+          <span class="team-role">Chiropractor</span>
+          <p class="bio-todo">Bio placeholder — the live site doesn't have one either. Ask Dr. Darryl for 2–3 sentences on his background and approach so this matches the other five doctors.</p>
+          <span class="loc-tag">📍 Longview</span>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-photo" style="background-image:url('https://myadvantagechiro.com/wp-content/uploads/2023/10/Chiropractor-Battle-Ground-WA-Morgan-Ruddiman-About2-circle-701a0b0c57eae183d27d78bbb0535d22-94lec26pbva0.webp');"></div>
+        <div class="team-body">
+          <h3>Dr. Morgan Ruddiman, DC</h3>
+          <span class="team-role">Clinic Director, Battle Ground</span>
+          <p>Trained in functional neurology and corrective chiropractic. Leads the Battle Ground office serving Brush Prairie and Hockinson families.</p>
+          <span class="loc-tag">📍 Battle Ground</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-staff reveal">
+      <div class="staff-chip"><div class="init" style="background-image:url('https://myadvantagechiro.com/wp-content/uploads/2025/10/Mirranda.jpg');"></div><b>Miranda Dietrich</b><span>Office Manager</span></div>
+      <div class="staff-chip"><div class="init" style="background-image:url('https://myadvantagechiro.com/wp-content/uploads/2023/10/Chiropractic-Longview-WA-Amanda-L.-About-circle-959c0816e0fd68b1034fb8ccfad7138b-74ed35ymfhx2.webp');"></div><b>Amanda Little</b><span>Billing Specialist</span></div>
+      <div class="staff-chip"><div class="init" style="background-image:url('https://myadvantagechiro.com/wp-content/uploads/2025/10/Heather.jpg');"></div><b>Heather Blehm</b><span>Lead Front Desk</span></div>
+      <div class="staff-chip"><div class="init" style="background-image:url('https://myadvantagechiro.com/wp-content/uploads/2025/10/Talia.jpg');"></div><b>Talia Raney</b><span>Front Desk</span></div>
+      <div class="staff-chip"><div class="init" style="background-image:url('https://myadvantagechiro.com/wp-content/uploads/2025/10/Kelcey.jpg');"></div><b>Kelcey Kyllonen</b><span>Front Desk / X-Ray Tech</span></div>
+    </div>
+
+    <div class="gallery-strip reveal">
+      <img src="images/doctor-adjusting-baby.jpg" alt="One of our doctors giving a gentle pediatric adjustment" loading="lazy">
+      <img src="https://myadvantagechiro.com/wp-content/uploads/photo-gallery/imported_from_media_libray/thumb/Chiropractor-Longview-WA-Darin-Shook-Adjusting-A-Patient-1.webp?bwg=1697810083" alt="Dr. Darin adjusting a patient" loading="lazy">
+      <img src="https://myadvantagechiro.com/wp-content/uploads/photo-gallery/imported_from_media_libray/thumb/Chiropractic-Longview-WA-Massage-Center-Lobby.webp?bwg=1697810083" alt="Massage center lobby" loading="lazy">
+      <img src="https://myadvantagechiro.com/wp-content/uploads/photo-gallery/imported_from_media_libray/thumb/Chiropractic-Longview-WA-Adjustment-Tables.webp?bwg=1697810083" alt="Adjustment tables" loading="lazy">
+      <img src="https://myadvantagechiro.com/wp-content/uploads/photo-gallery/imported_from_media_libray/thumb/Chiropractic-Longview-WA-Wall-Decor.webp?bwg=1697810083" alt="Office wall decor" loading="lazy">
+      <img src="https://myadvantagechiro.com/wp-content/uploads/photo-gallery/imported_from_media_libray/thumb/Chiropractor-Longview-WA-Anik-St.-Martin-Giving-A-Seminar.webp?bwg=1697810083" alt="Dr. Anik giving a community seminar" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ===== STORY ===== -->
+<section class="story">
+  <div class="wrap">
+    <div class="story-copy reveal">
+      <div class="eyebrow" style="color:#f2c9b0;">A patient story</div>
+      <h2>"By the time I got to my car, the migraine was gone."</h2>
+      <p>After 37 years as a migraine sufferer — averaging 20+ migraines a month and trying nearly everything from Botox to a CPAP machine — Kathy Sharek tried chiropractic care as a last resort.</p>
+      <p>An x-ray showed her neck curvature at 17°, far below the normal 35°. After 12 weeks of tailored adjustments, twice a week, her curve improved by 10 degrees — and the frequency and severity of her migraines dropped dramatically.</p>
+      <p style="font-weight:600;color:#fff;">"I no longer am afraid to go to a chiropractor. After an adjustment I feel a sense of release... I am so thankful for my chiropractor, Dr. Anik." — Kathy Sharek, Clatskanie, OR</p>
+      <a href="#new-patients" class="btn btn-outline">Start your own story →</a>
+    </div>
+    <div class="reveal">
+      <div class="story-badge">
+        <div class="big">17° → 27°</div>
+        <span>Neck curvature improvement after her first 12-week care plan</span>
+        <div class="story-stats">
+          <div class="story-badge" style="padding:16px;"><div style="font-family:'Fraunces',serif;font-size:22px;color:#f2c9b0;">2x</div><span>Adjustments per week</span></div>
+          <div class="story-badge" style="padding:16px;"><div style="font-family:'Fraunces',serif;font-size:22px;color:#f2c9b0;">12</div><span>Week initial care plan</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section id="testimonials">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;">Reviews</div>
+      <h2>What our patients say</h2>
+    </div>
+    <div class="tstack">
+      <div class="tcard reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Advantage Chiro is a one-stop-shop for maintaining a wellness-oriented lifestyle — classes, chiropractic care, expert massages. The staff is exceptional, the facilities clean, modern and comfortable."</p>
+        <div class="t-who"><div class="t-avatar" aria-hidden="true">DR</div><span>David Randle</span></div>
+      </div>
+      <div class="tcard reveal">
+        <div class="stars">★★★★★</div>
+        <p>"I have watched my neck go from curving the wrong direction to the proper side. I can get out of bed without pain, walk down the stairs without pain, and I rarely have headaches now."</p>
+        <div class="t-who"><div class="t-avatar" aria-hidden="true">WC</div><span>Wendy Covell</span></div>
+      </div>
+      <div class="tcard reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Everyone in the office is so friendly! Dr. Darin helped me beat my migraines and neck pain that no one could figure out. My husband and I both love it here."</p>
+        <div class="t-who"><div class="t-avatar" aria-hidden="true">MS</div><span>Madison Sparks</span></div>
+      </div>
+      <div class="tcard reveal">
+        <div class="stars">★★★★★</div>
+        <p>"I've been going to Dr. Daryl for over a year — he is kind, patient, thorough, and caring. The staff and doctors at Advantage really do care about your whole health."</p>
+        <div class="t-who"><div class="t-avatar" aria-hidden="true">RG</div><span>Regan Gonzalez Moreno</span></div>
+      </div>
+      <div class="tcard reveal">
+        <div class="stars">★★★★★</div>
+        <p>"We love that there are several providers to meet our needs, and I feel very comfortable having my children adjusted here. Truly the BEST!"</p>
+        <div class="t-who"><div class="t-avatar" aria-hidden="true">VH</div><span>Vanessa Hunter</span></div>
+      </div>
+      <div class="tcard reveal">
+        <div class="stars">★★★★★</div>
+        <p>"We've been going to Advantage for over 9 years. They've helped us through maternity, postpartum, infant and child needs. Highly recommended for the whole family!"</p>
+        <div class="t-who"><div class="t-avatar" aria-hidden="true">LC</div><span>Lena Colette</span></div>
+      </div>
+    </div>
+
+    <div class="tstack" id="moreReviews">
+      <div class="tcard">
+        <div class="stars">★★★★★</div>
+        <p>"What I brought to Dr. Anik was a 9-year-old stuck in fight-or-flight, with anxiety and OCD. What she gave back was a thriving, peaceful child free from the thoughts that were tormenting her. Forever grateful — our girl has her life back."</p>
+        <div class="t-who"><div class="t-avatar" aria-hidden="true">ES</div><span>Erika S.</span></div>
+      </div>
+      <div class="tcard">
+        <div class="stars">★★★★★</div>
+        <p>"I was scheduled for gallbladder removal surgery — my doctor was sure that was the cause of my pain. I saw a chiropractor as a last resort. After my first adjustment the pain was greatly reduced; within weeks it was almost gone. I cancelled the surgery."</p>
+        <div class="t-who"><div class="t-avatar" aria-hidden="true">MA</div><span>Melanie A.</span></div>
+      </div>
+      <div class="tcard">
+        <div class="stars">★★★★★</div>
+        <p>"I'd had allergies since I was young, and they were getting worse with age. After chiropractic care, my allergies, hives and flushing disappeared within a few short weeks — I could hardly believe it myself."</p>
+        <div class="t-who"><div class="t-avatar" aria-hidden="true">LB</div><span>Lynn B.</span></div>
+      </div>
+      <div class="tcard">
+        <div class="stars">★★★★★</div>
+        <p>"After a few months of chiropractic, my shoulder and back felt so good I got back into bodybuilding — I went on to win the overall Mr. Evergreen and the 2002 Mr. Washington heavyweight title."</p>
+        <div class="t-who"><div class="t-avatar" aria-hidden="true">TF</div><span>Tim F.</span></div>
+      </div>
+      <div class="tcard">
+        <div class="stars">★★★★★</div>
+        <p>"I have never been disappointed. I've been coming here for years and recommend them to everyone — there isn't one employee who hasn't been kind, caring and compassionate."</p>
+        <div class="t-who"><div class="t-avatar" aria-hidden="true">CS</div><span>Conni Shamp</span></div>
+      </div>
+      <div class="tcard">
+        <div class="stars">★★★★★</div>
+        <p>"The practitioners at Advantage provide excellent care and are very knowledgeable. They live the healthy lifestyle you'd want to see your care provider living, and inspire you to be healthier."</p>
+        <div class="t-who"><div class="t-avatar" aria-hidden="true">BA</div><span>Benjamin Austin</span></div>
+      </div>
+    </div>
+
+    <div class="t-more reveal">
+      <button type="button" class="btn btn-ghost" id="moreReviewsBtn" aria-expanded="false" aria-controls="moreReviews">Show more reviews</button>
+      <a href="https://www.facebook.com/myadvantagechiro/" target="_blank" rel="noopener" class="btn btn-ghost">Read more reviews on Facebook →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NEW PATIENTS ===== -->
+<section id="new-patients" class="services">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;">New patients</div>
+      <h2>What to expect on your first visit</h2>
+      <p class="lede">We're here to determine if chiropractic care is right for you — and walk you through every step.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="snum">1</div>
+        <h3>Exam &amp; X-rays</h3>
+        <p>A complete chiropractic examination including postural assessment and any necessary chiropractic x-rays.</p>
+      </div>
+      <div class="step reveal">
+        <div class="snum">2</div>
+        <h3>Findings &amp; adjustment</h3>
+        <p>Your doctor reviews exam findings, explains the cause of your issue, and provides an adjustment specific to your needs.</p>
+      </div>
+      <div class="step reveal">
+        <div class="snum">3</div>
+        <h3>Your care plan</h3>
+        <p>We review your optimal care plan and package rates in detail — with a foundation of wellness care for the whole family.</p>
+      </div>
+    </div>
+
+    <div class="np-panel reveal">
+      <div>
+        <h3 style="font-size:22px;">No insurance? No problem.</h3>
+        <p style="color:var(--ink-soft);">We believe corrective chiropractic care should be accessible for every family, so we've created cost-effective care plans — plus affordable payment options for correction and wellness care.</p>
+        <ul class="pay-list">
+          <li>Cash</li><li>Check</li><li>Debit</li><li>Visa</li><li>Mastercard</li><li>Discover</li><li>American Express</li><li>Most insurance accepted</li>
+        </ul>
+      </div>
+      <div>
+        <a href="#contact" class="btn btn-primary btn-block">Request an Appointment</a>
+        <p style="font-size:12.5px;color:var(--ink-soft);text-align:center;margin-top:12px;">"Getting Better Faster" orientation class offered twice monthly for new practice members.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EVENTS ===== -->
+<section id="events">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;">Community events</div>
+      <h2>Upcoming classes &amp; talks</h2>
+      <p class="lede">Free and low-cost events open to patients and the community, hosted at our Longview office.</p>
+    </div>
+    <div class="event-grid">
+      <div class="event-card reveal">
+        <div class="event-img" style="background-image:url('https://myadvantagechiro.com/wp-content/uploads/2023/09/washington_1920.jpg');"></div>
+        <div class="event-body">
+          <span class="event-tag">Wellness class · with Dr. Anik</span>
+          <h3>5-Day Fast-Mimicking Cleanse</h3>
+          <p>A guided, doctor-led approach to fasting-mimicking nutrition — for patients curious about resetting their diet under supervision.</p>
+          <a href="https://www.eventbrite.com/e/5-day-fast-mimicking-cleanse-with-dr-anik-tickets-1977631093838?aff=oddtdtcreator" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">See dates &amp; register ↗</a>
+          <p class="event-note">Dates, times and pricing are set on Eventbrite — verify current details before planning around this.</p>
+        </div>
+      </div>
+      <div class="event-card reveal">
+        <div class="event-img" style="background-image:url('https://myadvantagechiro.com/wp-content/uploads/2023/09/washington-1340484.jpg');"></div>
+        <div class="event-body">
+          <span class="event-tag">Community talk · with Dr. Anik St Martin</span>
+          <h3>The Vaccine Conversation</h3>
+          <p>An open discussion led by Dr. Anik St Martin. If this topic matters to your decision to attend, we'd recommend confirming the format (talk vs. Q&amp;A) directly on Eventbrite first.</p>
+          <a href="https://www.eventbrite.com/e/the-vaccine-conversation-presented-by-dr-anik-st-martin-tickets-1677100916989" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">See dates &amp; register ↗</a>
+          <p class="event-note">Dates, times and pricing are set on Eventbrite — verify current details before planning around this.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOCATIONS ===== -->
+<section id="locations" class="locations">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;">Two locations</div>
+      <h2>Find your nearest office</h2>
+      <p class="lede">Longview is our original office — five providers, 23+ years in the community. Battle Ground is our newer location, led by Dr. Morgan Ruddiman for the Brush Prairie and Hockinson area.</p>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-card reveal">
+        <div class="loc-map"><iframe loading="lazy" src="https://www.google.com/maps?q=1312+Vandercook+Way,+Longview,+WA+98632&output=embed" title="Longview office map"></iframe></div>
+        <div class="loc-body">
+          <span class="loc-badge">Flagship office · 23+ years in Longview</span>
+          <h3>Longview</h3>
+          <p class="loc-addr">1312 Vandercook Way, Longview, WA 98632</p>
+          <a class="loc-phone" href="tel:3604256620">(360) 425-6620</a>
+          <table class="hours-table">
+            <tr><td>Monday</td><td>9:00am – 4:00pm</td></tr>
+            <tr><td>Tuesday</td><td>9:00am–12pm, 3–6pm</td></tr>
+            <tr><td>Wednesday</td><td>9–1:30pm, 3–6pm</td></tr>
+            <tr><td>Thursday</td><td>9–1:30pm, 3–6pm</td></tr>
+            <tr><td>Friday</td><td>8:00am – 12:30pm</td></tr>
+            <tr><td>Sat &amp; Sun</td><td>Closed</td></tr>
+          </table>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=1312+Vandercook+Way,+Longview,+WA+98632" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Get Directions</a>
+        </div>
+      </div>
+      <div class="loc-card reveal">
+        <div class="loc-map"><iframe loading="lazy" src="https://www.google.com/maps?q=2210+W+Main+St+%23101,+Battle+Ground,+WA+98604&output=embed" title="Battle Ground office map"></iframe></div>
+        <div class="loc-body">
+          <span class="loc-badge">Newest office · led by Dr. Morgan Ruddiman</span>
+          <h3>Battle Ground</h3>
+          <p class="loc-addr">2210 W Main St #101, Battle Ground, WA 98604</p>
+          <a class="loc-phone" href="tel:3603695150">(360) 369-5150</a>
+          <table class="hours-table">
+            <tr><td>Monday</td><td>9–12pm, 3–6pm</td></tr>
+            <tr><td>Tuesday</td><td>3:00pm – 6:00pm</td></tr>
+            <tr><td>Wednesday</td><td>9–12pm, 3–6pm</td></tr>
+            <tr><td>Thursday</td><td>9:00am – 12:00pm</td></tr>
+            <tr><td>Friday</td><td>Closed</td></tr>
+            <tr><td>Sat &amp; Sun</td><td>Closed</td></tr>
+          </table>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=2210+W+Main+St+%23101,+Battle+Ground,+WA+98604" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Get Directions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <div class="eyebrow">Get in touch</div>
+      <h2>Ready to feel like yourself again?</h2>
+      <p class="lede" style="margin-bottom:30px;">Reach out with questions, or request an appointment at either office. Please don't send personal health information through this form.</p>
+
+      <div class="ci-row">
+        <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.8 2z"/></svg></div>
+        <div><b>Call us</b><br><a href="tel:3604256620">Longview: (360) 425-6620</a><br><a href="tel:3603695150">Battle Ground: (360) 369-5150</a></div>
+      </div>
+      <div class="ci-row">
+        <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div><b>Visit us</b><br><span>1312 Vandercook Way, Longview, WA 98632</span><br><span>2210 W Main St #101, Battle Ground, WA 98604</span></div>
+      </div>
+      <div class="ci-row">
+        <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
+        <div><b>Text us</b><br><a href="sms:contact@myadvantagechiro.com">contact@myadvantagechiro.com</a></div>
+      </div>
+
+      <div class="social-row">
+        <a href="https://www.facebook.com/myadvantagechiro/" target="_blank" rel="noopener" aria-label="Advantage Chiropractic on Facebook (opens in new tab)"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" aria-hidden="true"><path d="M15 3h-2a5 5 0 0 0-5 5v2H6v4h2v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="https://www.instagram.com/myadvantagechiro/" target="_blank" rel="noopener" aria-label="Advantage Chiropractic on Instagram (opens in new tab)"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" id="contactForm">
+      <div class="form-row">
+        <div class="form-field"><label for="f-first">First name</label><input id="f-first" name="first" type="text" placeholder="Jane" required></div>
+        <div class="form-field"><label for="f-last">Last name</label><input id="f-last" name="last" type="text" placeholder="Doe" required></div>
+      </div>
+      <div class="form-row">
+        <div class="form-field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" placeholder="jane@email.com" required></div>
+        <div class="form-field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" placeholder="(360) 555-0100"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-field full"><label for="f-location">Preferred location</label>
+          <select id="f-location" name="location">
+            <option>Longview — 1312 Vandercook Way</option>
+            <option>Battle Ground — 2210 W Main St #101</option>
+            <option>No preference</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field full"><label for="f-message">Message</label><textarea id="f-message" name="message" rows="4" placeholder="How can we help?"></textarea></div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+      <p class="form-note">For general information only — please do not send personal health information through this form. This form is a non-functional demo in the prototype.</p>
+      <div class="form-success" id="formSuccess">✓ Thanks! In the live site, this would send your message to our team.</div>
+    </form>
+  </div>
+</section>
+
+<!-- ===== CTA BAND ===== -->
+<section class="cta-band">
+  <div class="wrap">
+    <h2>We welcome new patients.</h2>
+    <p>Don't wait for the pain to worsen — reach out today and take the first step toward feeling like yourself again.</p>
+    <div class="hero-actions" style="justify-content:center;">
+      <a href="tel:3604256620" class="btn btn-primary">Call Longview Office</a>
+      <a href="tel:3603695150" class="btn btn-outline">Call Battle Ground Office</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">
+          <img src="https://myadvantagechiro.com/wp-content/uploads/2023/09/Chiropractic-Longview-WA-Advantage-Chiropractic-SB-Logo.webp" alt="Advantage Chiropractic" style="height:38px;width:auto;filter:brightness(0) invert(1);opacity:.9;">
+        </div>
+        <p style="max-width:280px;color:#9fb3ab;">Drug-free chiropractic, massage and family wellness care in Longview &amp; Battle Ground, WA. We invite you to contact us today.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Meet the Team</a></li>
+          <li><a href="#new-patients">New Patients</a></li>
+          <li><a href="#events">Events</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Locations</h4>
+        <ul>
+          <li><a href="#locations">Longview, WA</a></li>
+          <li><a href="#locations">Battle Ground, WA</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:3604256620">(360) 425-6620</a></li>
+          <li><a href="tel:3603695150">(360) 369-5150</a></li>
+          <li><a href="sms:contact@myadvantagechiro.com">Text Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Advantage Chiropractic — content adapted from myadvantagechiro.com for prototyping purposes.</span>
+      <span>Design concept draft · not affiliated with the original site vendor</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav
+  const hamBtn = document.getElementById('hamBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  const scrim = document.getElementById('scrim');
+  function closeNav(){ mobileNav.classList.remove('open'); scrim.classList.remove('open'); }
+  hamBtn.addEventListener('click', () => { mobileNav.classList.add('open'); scrim.classList.add('open'); });
+  scrim.addEventListener('click', closeNav);
+  document.querySelectorAll('.mobile-nav a').forEach(a => a.addEventListener('click', closeNav));
+
+  // Contact form demo
+  const form = document.getElementById('contactForm');
+  const success = document.getElementById('formSuccess');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    success.style.display = 'block';
+    form.querySelector('button').textContent = 'Sent ✓';
+  });
+
+  // More reviews toggle
+  const moreBtn = document.getElementById('moreReviewsBtn');
+  const moreReviews = document.getElementById('moreReviews');
+  moreBtn.addEventListener('click', () => {
+    const open = moreReviews.classList.toggle('open');
+    moreBtn.setAttribute('aria-expanded', open);
+    moreBtn.textContent = open ? 'Show fewer reviews' : 'Show more reviews';
+    moreReviews.querySelectorAll('.tcard').forEach(c => c.classList.add('reveal','in'));
+  });
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting){ entry.target.classList.add('in'); io.unobserve(entry.target); }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
