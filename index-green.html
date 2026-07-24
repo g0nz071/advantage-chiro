@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Advantage Chiropractic — Longview, WA</title>
+<title>Advantage Chiropractic — Longview, WA (Green Variant)</title>
 <meta name="description" content="Advantage Chiropractic serves Longview, WA with drug-free chiropractic care, massage, acupuncture, pediatric and prenatal care for the whole family.">
-<!-- PRIMARY PALETTE: client-specified brand colors — primary #6B5A4D, secondary #7D6B5D (warm taupe/brown), mapped onto the --forest-dark/--forest roles. The coral accent (buttons, badges) and sage/cream neutrals are unchanged. One rule (.loc-tag) is pointed at the darker of the two given colors instead of the lighter one — the lighter one measured 4.34:1 against the pale sage badge background, just under the 4.5:1 AA text threshold; the darker one clears it at 8+:1. No hex values were altered from what was given. The original forest-green/coral palette is preserved as index-green.html. -->
+<!-- ORIGINAL PALETTE: forest green (#1f4a41/#153531) + coral (#d97a52/#9c4d2a) — this was the primary index.html until the taupe brand palette became the default. Kept here unchanged as a named variant. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --forest:#7D6B5D;
-    --forest-dark:#6B5A4D;
+    --forest:#1f4a41;
+    --forest-dark:#153531;
     --sage:#e9efe6;
     --sage-2:#d9e6d6;
     --cream:#faf6ee;
@@ -23,7 +23,7 @@
     --line:#e2dccd;
     --white:#ffffff;
     --radius:18px;
-    --shadow: 0 20px 45px -25px rgba(60,50,42,0.35);
+    --shadow: 0 20px 45px -25px rgba(20,40,35,0.35);
     --maxw:1180px;
   }
   *{box-sizing:border-box;}
@@ -102,18 +102,18 @@
   /* Hero */
   .hero{
     position:relative;overflow:hidden;
-    background:radial-gradient(1100px 550px at 82% -10%, #8F7C6C 0%, var(--forest) 45%, var(--forest-dark) 100%);
+    background:radial-gradient(1100px 550px at 82% -10%, #2b5e52 0%, var(--forest) 45%, var(--forest-dark) 100%);
     color:#fff;padding:88px 0 0;
   }
   .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;position:relative;z-index:2;}
   .hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:7px 15px;border-radius:100px;font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:22px;}
   .hero h1{color:#fff;font-size:clamp(34px,4.6vw,54px);margin-bottom:22px;}
-  .hero h1 em{color:#FBF4E9;font-style:normal;}
-  .hero p.lede{color:#FCF8F0;font-size:18px;max-width:480px;}
+  .hero h1 em{color:#f2c9b0;font-style:normal;}
+  .hero p.lede{color:#dfe9e4;font-size:18px;max-width:480px;}
   .hero-actions{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap;}
   .hero-stats{display:flex;gap:28px;margin-top:52px;padding-top:26px;border-top:1px solid rgba(255,255,255,.18);flex-wrap:wrap;}
   .hero-stats div b{display:block;font-family:'Fraunces',serif;font-size:26px;color:#fff;}
-  .hero-stats div span{font-size:12.5px;color:#F8F2E8;}
+  .hero-stats div span{font-size:12.5px;color:#c9d8d1;}
   .hero-art{position:relative;height:420px;}
   .hero-card{
     position:absolute;background:#fff;border-radius:16px;padding:18px 20px;box-shadow:0 25px 50px -20px rgba(0,0,0,.4);
@@ -130,7 +130,7 @@
     box-shadow:var(--shadow);
   }
   .hero-video video{width:100%;height:100%;object-fit:cover;display:block;}
-  .hero-photo-cap{position:absolute;top:14px;left:14px;z-index:2;background:rgba(45,38,31,.72);color:#fff;font-size:12px;font-weight:600;padding:8px 14px;border-radius:100px;backdrop-filter:blur(4px);pointer-events:none;}
+  .hero-photo-cap{position:absolute;top:14px;left:14px;z-index:2;background:rgba(12,26,22,.72);color:#fff;font-size:12px;font-weight:600;padding:8px 14px;border-radius:100px;backdrop-filter:blur(4px);pointer-events:none;}
   .wave{display:block;width:100%;position:relative;z-index:1;margin-top:60px;line-height:0;}
 
   /* Trust strip */
@@ -139,7 +139,7 @@
   .trust .item{flex:1 1 200px;padding:26px 28px;text-align:center;color:#fff;border-left:1px solid rgba(255,255,255,.12);}
   .trust .item:first-child{border-left:none;}
   .trust .item b{display:block;font-family:'Fraunces',serif;font-size:24px;}
-  .trust .item span{font-size:12.5px;color:#F8F2E8;}
+  .trust .item span{font-size:12.5px;color:#c9d8d1;}
 
   /* About */
   .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start;}
@@ -187,7 +187,7 @@
   .team-body p{font-size:14px;color:var(--ink-soft);margin-bottom:0;}
   .bio-todo{background:var(--sage);border:1px dashed var(--sage-2);border-radius:8px;padding:8px 10px;font-size:12.5px;font-style:italic;color:var(--ink-soft);}
   .loc-tag{
-    display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:700;color:var(--forest-dark);background:var(--sage);
+    display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:700;color:var(--forest);background:var(--sage);
     padding:4px 10px;border-radius:100px;margin-top:12px;
   }
   .team-banner{width:100%;height:440px;object-fit:cover;object-position:center 15%;border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:48px;}
@@ -206,13 +206,13 @@
   .story{background:var(--forest);color:#fff;}
   .story .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center;}
   .story h2{color:#fff;}
-  .story .lede{color:#FCF8F0;}
-  .story-copy p{color:#FAF4EA;font-size:15.5px;}
+  .story .lede{color:#dfe9e4;}
+  .story-copy p{color:#e6efe9;font-size:15.5px;}
   .story-badge{
     background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:26px;
   }
-  .story-badge .big{font-family:'Fraunces',serif;font-size:48px;color:#FBF4E9;line-height:1;}
-  .story-badge span{font-size:13px;color:#F8F2E8;display:block;margin-top:8px;}
+  .story-badge .big{font-family:'Fraunces',serif;font-size:48px;color:#f2c9b0;line-height:1;}
+  .story-badge span{font-size:13px;color:#c9d8d1;display:block;margin-top:8px;}
   .story-stats{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px;}
 
   /* Testimonials */
@@ -255,7 +255,7 @@
   /* Locations */
   .locations{background:var(--forest-dark);}
   .locations .section-head h2{color:#fff;}
-  .locations .section-head .lede{color:#F8F2E8;}
+  .locations .section-head .lede{color:#c9d8d1;}
   .loc-grid{display:grid;grid-template-columns:1fr;gap:26px;max-width:520px;margin:0 auto;}
   .loc-card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);}
   .loc-map{height:190px;background:var(--sage-2);}
@@ -299,11 +299,11 @@
   .cta-band h2{color:#fff;margin-bottom:14px;}
   .cta-band p{color:#fbe6db;max-width:520px;margin:0 auto 26px;}
   .cta-band .btn-primary{background:var(--forest-dark);}
-  .cta-band .btn-primary:hover{background:#514336;}
+  .cta-band .btn-primary:hover{background:#0e2622;}
   .cta-band .btn-outline{border-color:rgba(255,255,255,.6);}
 
   /* Footer */
-  footer{background:var(--forest-dark);color:#F8F2E8;padding:64px 0 26px;font-size:14px;}
+  footer{background:var(--forest-dark);color:#c9d8d1;padding:64px 0 26px;font-size:14px;}
   .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px;}
   .foot-logo{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-size:19px;color:#fff;font-weight:700;margin-bottom:14px;}
   .foot-logo .mark{width:34px;height:34px;border-radius:9px;background:var(--coral);display:flex;align-items:center;justify-content:center;}
@@ -311,13 +311,13 @@
   footer h4{color:#fff;font-family:'Inter',sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;}
   footer ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;}
   footer a:hover{color:#fff;}
-  .foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12.5px;color:#E9E1D7;}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12.5px;color:#9fb3ab;}
 
   /* Prototype banner */
   .proto-banner{
-    background:#3C3228;color:#fff;font-size:12.5px;text-align:center;padding:9px 14px;
+    background:#141d1a;color:#fff;font-size:12.5px;text-align:center;padding:9px 14px;
   }
-  .proto-banner b{color:#FBF4E9;}
+  .proto-banner b{color:#f2c9b0;}
 
   .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease, transform .6s ease;}
   .reveal.in{opacity:1;transform:none;}
@@ -360,7 +360,7 @@
   }
   .mobile-nav.open{transform:translateX(0);}
   .mobile-nav a{padding:13px 4px;border-bottom:1px solid var(--line);font-weight:600;}
-  .scrim{position:fixed;inset:0;background:rgba(45,38,31,.4);z-index:99;opacity:0;pointer-events:none;transition:opacity .3s ease;}
+  .scrim{position:fixed;inset:0;background:rgba(10,20,17,.4);z-index:99;opacity:0;pointer-events:none;transition:opacity .3s ease;}
   .scrim.open{opacity:1;pointer-events:auto;}
 
   /* Accessibility */
@@ -677,7 +677,7 @@
 <section class="story">
   <div class="wrap">
     <div class="story-copy reveal">
-      <div class="eyebrow" style="color:#FBF4E9;">A patient story</div>
+      <div class="eyebrow" style="color:#f2c9b0;">A patient story</div>
       <h2>"By the time I got to my car, the migraine was gone."</h2>
       <p>After 37 years as a migraine sufferer — averaging 20+ migraines a month and trying nearly everything from Botox to a CPAP machine — Kathy Sharek tried chiropractic care as a last resort.</p>
       <p>An x-ray showed her neck curvature at 17°, far below the normal 35°. After 12 weeks of tailored adjustments, twice a week, her curve improved by 10 degrees — and the frequency and severity of her migraines dropped dramatically.</p>
@@ -689,8 +689,8 @@
         <div class="big">17° → 27°</div>
         <span>Neck curvature improvement after her first 12-week care plan</span>
         <div class="story-stats">
-          <div class="story-badge" style="padding:16px;"><div style="font-family:'Fraunces',serif;font-size:22px;color:#FBF4E9;">2x</div><span>Adjustments per week</span></div>
-          <div class="story-badge" style="padding:16px;"><div style="font-family:'Fraunces',serif;font-size:22px;color:#FBF4E9;">12</div><span>Week initial care plan</span></div>
+          <div class="story-badge" style="padding:16px;"><div style="font-family:'Fraunces',serif;font-size:22px;color:#f2c9b0;">2x</div><span>Adjustments per week</span></div>
+          <div class="story-badge" style="padding:16px;"><div style="font-family:'Fraunces',serif;font-size:22px;color:#f2c9b0;">12</div><span>Week initial care plan</span></div>
         </div>
       </div>
     </div>
@@ -949,7 +949,7 @@
         <div class="foot-logo">
           <img src="https://myadvantagechiro.com/wp-content/uploads/2023/09/Chiropractic-Longview-WA-Advantage-Chiropractic-SB-Logo.webp" alt="Advantage Chiropractic" style="height:38px;width:auto;filter:brightness(0) invert(1);opacity:.9;">
         </div>
-        <p style="max-width:280px;color:#E9E1D7;">Drug-free chiropractic, massage and family wellness care in Longview, WA. We invite you to contact us today.</p>
+        <p style="max-width:280px;color:#9fb3ab;">Drug-free chiropractic, massage and family wellness care in Longview, WA. We invite you to contact us today.</p>
       </div>
       <div>
         <h4>Explore</h4>
