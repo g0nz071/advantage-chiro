@@ -114,17 +114,16 @@
   .hero-stats{display:flex;gap:28px;margin-top:52px;padding-top:26px;border-top:1px solid rgba(255,255,255,.18);flex-wrap:wrap;}
   .hero-stats div b{display:block;font-family:'Fraunces',serif;font-size:26px;color:#fff;}
   .hero-stats div span{font-size:12.5px;color:#F8F2E8;}
-  .hero-art{position:relative;height:420px;}
+  .hero-art{display:flex;flex-direction:column;gap:18px;}
+  .hero-cards-row{display:flex;gap:16px;flex-wrap:wrap;}
   .hero-card{
-    position:absolute;background:#fff;border-radius:16px;padding:18px 20px;box-shadow:0 25px 50px -20px rgba(0,0,0,.4);
-    color:var(--ink);width:230px;
+    background:#fff;border-radius:16px;padding:18px 20px;box-shadow:0 25px 50px -20px rgba(0,0,0,.4);
+    color:var(--ink);flex:1 1 200px;
   }
-  .hero-card.c1{top:6%;right:6%;}
-  .hero-card.c2{bottom:8%;left:0;width:250px;}
   .hero-card b{display:block;font-family:'Fraunces',serif;color:var(--forest-dark);font-size:15px;margin-bottom:4px;}
   .hero-card span{font-size:12.5px;color:var(--ink-soft);}
   .hero-video{
-    position:absolute;inset:8% 14%;border-radius:24px;overflow:hidden;
+    position:relative;border-radius:24px;overflow:hidden;aspect-ratio:16/9;
     background:#0f1e1a;
     border:1px solid rgba(255,255,255,.25);
     box-shadow:var(--shadow);
@@ -179,7 +178,7 @@
   .team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
   .team-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:var(--shadow);}
   .team-photo{
-    height:230px;background-size:cover;background-position:center top;
+    aspect-ratio:3/4;width:100%;background-size:cover;background-position:center top;
   }
   .team-body{padding:20px 22px 24px;}
   .team-body h3{font-size:17px;margin-bottom:2px;}
@@ -324,7 +323,6 @@
 
   @media (max-width: 980px){
     .hero .wrap{grid-template-columns:1fr;}
-    .hero-art{display:none;}
     .about-grid,.story .wrap,.contact-grid,.np-panel{grid-template-columns:1fr;}
     .about-visual{position:static;}
     .svc-grid{grid-template-columns:repeat(2,1fr);}
@@ -445,12 +443,14 @@
       <div class="hero-video">
         <span class="hero-photo-cap">▶ Welcome to Advantage Chiropractic</span>
         <video controls preload="metadata" poster="images/intro-video-poster.jpg" playsinline>
-          <source src="videos/intro-video.mp4" type="video/mp4">
-          Your browser doesn't support embedded video. <a href="videos/intro-video.mp4">Download the welcome video</a>.
+          <source src="videos/Updated-Intro-Video-Aug-2024_COMPRESSED.mp4" type="video/mp4">
+          Your browser doesn't support embedded video. <a href="videos/Updated-Intro-Video-Aug-2024_COMPRESSED.mp4">Download the welcome video</a>.
         </video>
       </div>
-      <div class="hero-card c1"><b>Same-week visits</b><span>Most new patients seen within days.</span></div>
-      <div class="hero-card c2"><b>Kathy's migraine story</b><span>"The headache was gone by the time I got to my car." — see her story below</span></div>
+      <div class="hero-cards-row">
+        <div class="hero-card"><b>Same-week visits</b><span>Most new patients seen within days.</span></div>
+        <div class="hero-card"><b>Kathy's migraine story</b><span>"The headache was gone by the time I got to my car." — see her story below</span></div>
+      </div>
     </div>
   </div>
   <div style="height:70px;"></div>
