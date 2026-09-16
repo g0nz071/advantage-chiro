@@ -174,6 +174,14 @@
   .svc-card p{font-size:14.5px;color:var(--ink-soft);margin-bottom:14px;}
   .svc-card a{font-size:13.5px;font-weight:700;color:var(--coral-dark);}
   .svc-more{text-align:center;margin-top:40px;}
+  #conditionsPanel{display:none;margin-top:28px;text-align:left;background:#fff;border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);}
+  #conditionsPanel.open{display:block;}
+  .conditions-intro{color:var(--ink-soft);font-size:14.5px;margin-bottom:20px;text-align:center;}
+  .conditions-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;}
+  .conditions-col h4{font-family:'Fraunces',serif;font-size:16px;color:var(--forest-dark);margin-bottom:10px;}
+  .conditions-col ul{list-style:none;padding:0;margin:0;}
+  .conditions-col li{font-size:13.5px;color:var(--ink-soft);padding:5px 0;border-bottom:1px solid var(--line);}
+  .conditions-col li:last-child{border-bottom:none;}
 
   /* Team */
   .team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
@@ -346,6 +354,7 @@
     .about-grid,.story .wrap,.contact-grid,.np-panel,.ct-booking{grid-template-columns:1fr;}
     .about-visual{position:static;}
     .svc-grid{grid-template-columns:repeat(2,1fr);}
+    .conditions-grid{grid-template-columns:repeat(2,1fr);}
     .team-grid{grid-template-columns:repeat(2,1fr);}
     .team-staff{grid-template-columns:repeat(3,1fr);}
     .gallery-strip{grid-template-columns:repeat(3,1fr);}
@@ -361,6 +370,7 @@
     .topbar{display:none;}
     section{padding:64px 0;}
     .svc-grid{grid-template-columns:1fr;}
+    .conditions-grid{grid-template-columns:1fr;}
     .team-grid{grid-template-columns:1fr;}
     .team-staff{grid-template-columns:repeat(2,1fr);}
     .gallery-strip{grid-template-columns:repeat(2,1fr);}
@@ -613,7 +623,67 @@
 
     </div>
     <div class="svc-more reveal">
-      <a href="#contact" class="btn btn-ghost">In addition to wellness, our patients seek us out for - see list in documents.</a>
+      <button type="button" class="btn btn-ghost" id="conditionsBtn" aria-expanded="false" aria-controls="conditionsPanel">See all conditions we treat →</button>
+      <div class="conditions-panel" id="conditionsPanel">
+        <p class="conditions-intro">We can't claim to "treat" specific conditions — but here's what patients come to us for, and what we've helped thousands of people work through:</p>
+        <div class="conditions-grid">
+          <div class="conditions-col">
+            <h4>Babies</h4>
+            <ul>
+              <li>Colic</li>
+              <li>Ear infections</li>
+              <li>Constipation</li>
+              <li>Torticollis</li>
+              <li>Fussiness</li>
+              <li>Breastfeeding and latch challenges</li>
+            </ul>
+          </div>
+          <div class="conditions-col">
+            <h4>Children &amp; Teens</h4>
+            <ul>
+              <li>Athletic performance and injury prevention</li>
+              <li>Focus and learning</li>
+              <li>ADHD</li>
+              <li>Ear infections</li>
+              <li>Chronic colds and flu</li>
+              <li>OCD</li>
+              <li>Autism spectrum disorders</li>
+              <li>Growing pains</li>
+              <li>PMS and hormonal challenges</li>
+            </ul>
+          </div>
+          <div class="conditions-col">
+            <h4>Adults</h4>
+            <ul>
+              <li>Neck pain</li>
+              <li>Back pain</li>
+              <li>Headaches</li>
+              <li>Migraines</li>
+              <li>Numbness and tingling in hands and feet</li>
+              <li>Sciatica</li>
+              <li>Digestive problems</li>
+              <li>Anxiety and overwhelm</li>
+              <li>Fatigue</li>
+              <li>Insomnia and sleep problems</li>
+              <li>Knee, hip and shoulder pain</li>
+              <li>Carpal tunnel</li>
+              <li>Neuropathies</li>
+              <li>Autoimmune problems</li>
+            </ul>
+          </div>
+          <div class="conditions-col">
+            <h4>Pregnant Women</h4>
+            <ul>
+              <li>Healthy birth outcomes</li>
+              <li>Comfort with pregnancy</li>
+              <li>Pubic symphysis dysfunction</li>
+              <li>Sciatica</li>
+              <li>Carpal tunnel</li>
+              <li>Energy and ease of movement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -1051,6 +1121,17 @@
     ctBookBtn.addEventListener('click', (e) => {
       e.preventDefault();
       ctDemoNote.classList.add('show');
+    });
+  }
+
+  // Conditions list toggle
+  const condBtn = document.getElementById('conditionsBtn');
+  const condPanel = document.getElementById('conditionsPanel');
+  if (condBtn) {
+    condBtn.addEventListener('click', () => {
+      const open = condPanel.classList.toggle('open');
+      condBtn.setAttribute('aria-expanded', open);
+      condBtn.textContent = open ? 'Hide conditions list ↑' : 'See all conditions we treat →';
     });
   }
 
