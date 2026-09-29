@@ -279,6 +279,18 @@
   .event-body p{font-size:14px;color:var(--ink-soft);}
   .event-note{font-size:12px;color:var(--ink-soft);font-style:italic;margin-top:10px;}
 
+  /* Blog */
+  .blog-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;}
+  .blog-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;}
+  .blog-img{height:220px;background-size:cover;background-position:center;}
+  .blog-body{padding:26px 28px 30px;}
+  .blog-tag{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--coral-dark);margin-bottom:8px;display:block;}
+  .blog-body h3{font-size:20px;margin-bottom:10px;}
+  .blog-body p{font-size:14.5px;color:var(--ink-soft);}
+  .blog-full{display:none;}
+  .blog-full.open{display:block;}
+  .blog-toggle{margin-top:8px;}
+
   /* Locations */
   .locations{background:var(--forest-dark);}
   .locations .section-head h2{color:#fff;}
@@ -361,6 +373,7 @@
     .tstack{grid-template-columns:1fr;}
     .steps{grid-template-columns:1fr;}
     .event-grid{grid-template-columns:1fr;}
+    .blog-grid{grid-template-columns:1fr;}
     .loc-grid{grid-template-columns:1fr;}
     .foot-grid{grid-template-columns:1fr 1fr;}
   }
@@ -428,6 +441,7 @@
       <a href="#team">Our Team</a>
       <a href="#new-patients">New Patients</a>
       <a href="#events">Events</a>
+      <a href="#blog">Blog</a>
       <a href="#locations">Locations</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -446,6 +460,7 @@
   <a href="#team">Our Team</a>
   <a href="#new-patients">New Patients</a>
   <a href="#events">Events</a>
+  <a href="#blog">Blog</a>
   <a href="#locations">Locations</a>
   <a href="#contact">Contact</a>
   <a href="#new-patients" class="btn btn-primary" style="margin-top:14px;border:none;">Request Appointment</a>
@@ -959,6 +974,55 @@
   </div>
 </section>
 
+<!-- ===== BLOG ===== -->
+<section id="blog">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;">From our doctors</div>
+      <h2>Health &amp; wellness blog</h2>
+      <p class="lede">Notes on healing, patience and the long game of staying well &mdash; written by our own Dr. Anik St Martin.</p>
+    </div>
+    <div class="blog-grid">
+      <article class="blog-card reveal">
+        <div class="blog-img" style="background-image:url('images/blog-six-to-eight-week-rule.jpg');"></div>
+        <div class="blog-body">
+          <span class="blog-tag">Blog &middot; by Dr. Anik St Martin, DC, DACCP</span>
+          <h3>The &ldquo;six-to-eight week&rdquo; rule</h3>
+          <p>I injured myself two months ago. I ignored the signs not to engage in a ridiculous Sumo deadlift. I noise-canceled the words emanating from every inch of my body, telling me, &ldquo;No! Don&rsquo;t do it! Don&rsquo;t lift that weight. Can&rsquo;t you hear me?&rdquo; But that&rsquo;s what we do, isn&rsquo;t it? Ignore the signs?</p>
+          <div class="blog-full" id="blogFull1">
+            <p>We say things like:<br>&ldquo;I&rsquo;m exhausted, but I have to stay up anyway,&rdquo;<br>&ldquo;My knee hurts, but I should run anyway,&rdquo; and<br>&ldquo;It doesn&rsquo;t feel good to bend this deeply to lift this weight, but it&rsquo;ll be fine&hellip; I&rsquo;ll do it anyway.&rdquo;</p>
+            <p>Then we get to the other side. The injured side. The sick side. We say to ourselves, &ldquo;I knew it. I felt it. I ignored it.&rdquo;</p>
+            <p>It&rsquo;s happened to all of us. We&rsquo;ve all been injured; and, when we are down for the count, our pendulum inevitably swings into impatience rather quickly. It doesn&rsquo;t take long to start feeling like we should be better by now; to find ourselves repeatedly worried by that whisper in our stomach wondering if we&rsquo;ll ever get better and vividly imagining what we&rsquo;ll do if we&rsquo;re like this forever.</p>
+            <p>After 25 years of chiropractic practice, helping people and seeing them through their back, neck, shoulder, knee, ankle, and hip injuries, it&rsquo;s amazing how easily the reassuring words I know are true in my heart are forgotten the moment I myself am injured.</p>
+            <p>The unequivocal principle is that there is no healing process that doesn&rsquo;t take time, even with access to the best of conditions. Healing always takes time.</p>
+            <p>Predictably, with most injuries, that time is exactly six-to-eight weeks.</p>
+            <p>Being pain-free prior to the end of this six to eight-week period doesn&rsquo;t preclude us from this time principle. Pushing it before our body is done with its healing project makes us vulnerable to reinjury; and, because we are in a rush to get back to what we were doing, reinjury happens frequently. Even the best athletes and the hardest of workers consider rest and recovery as part of their training, as part of getting better.</p>
+            <p>I write this because I was in this injury boat, inching along all too slowly; but, at exactly the eight-week mark, I found myself mostly healed and largely better, even though at week five, I was losing hope that I would ever enjoy my favorite things again. The worry trap happens to us all. For those who are presently working on a healing project, I offer you a dose of hope and trust and patience. For those who feel amazing and unstoppable, feel free to just put the six to eight-week &ldquo;trust in healing rule&rdquo; in your pocket for a later time, when you might need it.</p>
+          </div>
+          <button type="button" class="btn btn-ghost btn-sm blog-toggle" data-target="blogFull1" aria-expanded="false">Read full article &rarr;</button>
+        </div>
+      </article>
+      <article class="blog-card reveal">
+        <div class="blog-img" style="background-image:url('images/blog-the-long-game.jpg');"></div>
+        <div class="blog-body">
+          <span class="blog-tag">Blog &middot; by Dr. Anik St Martin, DC, DACCP</span>
+          <h3>The long game of health and wellness</h3>
+          <p>Who doesn&rsquo;t love a quick fix? A bio hack? The promise of age reversal or the miracle in a pill, lotion, or potion? I believe we gravitate toward these sparkly promises of instant health, instant weight loss, and instant wrinkle erasing because we&rsquo;re wired for hope.</p>
+          <div class="blog-full" id="blogFull2">
+            <p>We know there&rsquo;s a better way, and the beauty of our potential is in the palm of our hands, waiting for its juices to be squeezed into the now.</p>
+            <p>However, like my mom used to say, &ldquo;It&rsquo;s like easy money; if it sounds too good to be true, it&rsquo;s most likely too good to be true.&rdquo; Even if you try to ignore your intuition, a ruse can be felt in all your innate parts. After 25 years of close relationships with thousands of families in the chiropractic wellness practice which I&rsquo;ve shared with my husband, Darin, there are specific belief systems and lifestyle choices which seem to be the line in the sand shared by the healthiest families for which we&rsquo;ve had the privilege of caring. In a nutshell, these families embody the following paradigms:</p>
+            <p>Health is a lifestyle. Just because a shortcut is sexy doesn&rsquo;t mean it&rsquo;s not a distraction. If you take a shortcut, prepare for a detour. Eating well is non-negotiable, and time in the kitchen is always time well spent. Investing in good food &ndash; grown as close to home as possible &ndash; and forming a relationship with our local farmers and meat purveyors brings excitement to the plate, brings kids around the table, and lets the body know that you&rsquo;re paying attention.</p>
+            <p>Moving well should happen daily. For example, we have a genetic requirement to walk at least 20 minutes per day. When we don&rsquo;t, we move our bodies away from what they genetically require for health and healing, and we begin to move toward degeneration and disease. Unfortunately, there is no stagnant space of &ldquo;in-between.&rdquo;</p>
+            <p>Thinking well includes realizing that we live in a time where we have to protect our attentional space&mdash;almost religiously. Putting our phones down, turning off the news, waking up in the morning and, from a place of gratitude, affirming the beauty before us and the opportunities of the day ahead. Some may find this to sound ethereal, but it is indeed aligned with the healthiest people I know. Sleeping 7&ndash;10 hours per night (for adults) and 8&ndash;12 hours (for children) &ndash; and making sure this is a habit &ndash; allows the body to heal and rejuvenate every day. These families don&rsquo;t have screens in the bedrooms, and they share an intentional bedtime, not one determined by the time they start to nod off on the couch. Beauty rest is the real thing.</p>
+            <p>They say that how we do anything is how we do everything, which has me wondering, &ldquo;If I change one thing, how will that one thing trickle down to my everything?&rdquo; If there are no shortcuts, then we&rsquo;re left with lifelong commitment; and, if that&rsquo;s the truth, maybe the only option is to fall in love with the pursuit.</p>
+          </div>
+          <button type="button" class="btn btn-ghost btn-sm blog-toggle" data-target="blogFull2" aria-expanded="false">Read full article &rarr;</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- ===== LOCATIONS ===== -->
 <section id="locations" class="locations">
   <div class="wrap">
@@ -1066,6 +1130,7 @@
           <li><a href="#team">Meet the Team</a></li>
           <li><a href="#new-patients">New Patients</a></li>
           <li><a href="#events">Events</a></li>
+          <li><a href="#blog">Blog</a></li>
         </ul>
       </div>
       <div>
@@ -1138,6 +1203,16 @@
     moreBtn.setAttribute('aria-expanded', open);
     moreBtn.textContent = open ? 'Show fewer reviews' : 'Show more reviews';
     moreReviews.querySelectorAll('.tcard').forEach(c => c.classList.add('reveal','in'));
+  });
+
+  // Blog read-more toggle
+  document.querySelectorAll('.blog-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const panel = document.getElementById(btn.dataset.target);
+      const open = panel.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+      btn.textContent = open ? 'Show less \u2191' : 'Read full article \u2192';
+    });
   });
 
   // Reveal on scroll
