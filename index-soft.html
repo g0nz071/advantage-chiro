@@ -252,8 +252,7 @@
 
   /* ChiroTouch online-booking demo widget */
   .ct-booking{
-    background:var(--sage);border-radius:var(--radius);padding:36px;display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;
-    margin-bottom:32px;
+    background:var(--sage);border-radius:var(--radius);padding:36px;max-width:640px;margin:0 auto 32px;
   }
   .ct-booking-info h3{font-size:22px;margin-bottom:10px;}
   .ct-booking-info p{color:var(--ink-soft);margin-bottom:20px;}
@@ -898,17 +897,6 @@
         <a href="#" class="btn btn-primary ct-book-btn">Book Appointment Online</a>
         <span class="ct-demo-note" id="ctDemoNote">Demo only — this button will link directly to our live ChiroTouch scheduling page once connected.</span>
         <span class="ct-powered">Powered by ChiroTouch</span>
-      </div>
-      <div class="ct-widget-frame" aria-hidden="true">
-        <div class="ct-widget-chrome">
-          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-          <span class="ct-widget-url">scheduling.chirotouch.com</span>
-        </div>
-        <div class="ct-widget-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-          <p>ChiroTouch online scheduling widget embeds here</p>
-          <span>Live calendar preview — connects once your booking link is added</span>
-        </div>
       </div>
     </div>
 
