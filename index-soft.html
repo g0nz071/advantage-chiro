@@ -631,7 +631,7 @@
 
     </div>
     <div class="svc-more reveal">
-      <button type="button" class="btn btn-ghost" id="conditionsBtn" aria-expanded="false" aria-controls="conditionsPanel">See all conditions we treat →</button>
+      <button type="button" class="btn btn-ghost" id="conditionsBtn" aria-expanded="false" aria-controls="conditionsPanel">Additional conditions we help with →</button>
       <div class="conditions-panel" id="conditionsPanel">
         <p class="conditions-intro">We can't claim to "treat" specific conditions — but here's what patients come to us for, and what we've helped thousands of people work through:</p>
         <div class="conditions-grid">
@@ -1191,7 +1191,7 @@
     condBtn.addEventListener('click', () => {
       const open = condPanel.classList.toggle('open');
       condBtn.setAttribute('aria-expanded', open);
-      condBtn.textContent = open ? 'Hide conditions list ↑' : 'See all conditions we treat →';
+      condBtn.textContent = open ? 'Hide conditions list ↑' : 'Additional conditions we help with →';
     });
   }
 
