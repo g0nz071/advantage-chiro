@@ -90,7 +90,7 @@
   .topbar .tb-left span{color:var(--ink-soft);font-weight:400;}
   .navrow{display:flex;align-items:center;justify-content:space-between;padding:16px 0;}
   .logo{display:flex;align-items:center;gap:11px;font-family:'Fraunces',serif;font-weight:700;font-size:21px;color:var(--forest-dark);}
-  .logo img{height:59px;width:auto;display:block;}
+  .logo img{height:65px;width:auto;display:block;}
   .logo small{display:block;font-family:'Inter',sans-serif;font-weight:500;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--coral-dark);}
   nav.mainnav{display:flex;gap:30px;align-items:center;}
   nav.mainnav a{font-weight:600;font-size:14.5px;color:var(--ink);position:relative;padding:4px 0;}
@@ -270,7 +270,7 @@
   .ct-widget-placeholder span{font-size:11.5px;color:var(--ink-soft);opacity:.8;}
 
   /* Events */
-  .event-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+  .event-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
   .event-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;}
   .event-img{height:150px;background-size:cover;background-position:center;}
   .event-body{padding:22px 24px 26px;}
@@ -425,10 +425,10 @@
 <header>
   <div class="wrap topbar">
     <div class="tb-left">
-      <span>Call us: <a href="tel:3604256620" style="font-size:16.5px;">(360) 425-6620</a></span>
+      <a href="tel:3604256620" style="font-size:22.5px;font-weight:700;color:#000;">(360) 425-6620</a>
     </div>
     <div class="tb-left">
-      <span>Mon–Fri · Serving Longview, WA</span>
+      <a href="#contact"><span>Mon–Fri · Serving Longview, WA</span></a>
     </div>
   </div>
   <div class="wrap navrow">
@@ -438,11 +438,9 @@
     <nav class="mainnav">
       <a href="#about">About</a>
       <a href="#services">Services</a>
-      <a href="#team">Our Team</a>
       <a href="#new-patients">New Patients</a>
       <a href="#events">Events</a>
-      <a href="#blog">Blog</a>
-      <a href="#locations">Locations</a>
+      <a href="#blog">Health Blog/Vlog</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="nav-cta">
@@ -457,11 +455,9 @@
 <div class="mobile-nav" id="mobileNav">
   <a href="#about">About</a>
   <a href="#services">Services</a>
-  <a href="#team">Our Team</a>
   <a href="#new-patients">New Patients</a>
   <a href="#events">Events</a>
-  <a href="#blog">Blog</a>
-  <a href="#locations">Locations</a>
+  <a href="#blog">Health Blog/Vlog</a>
   <a href="#contact">Contact</a>
   <a href="#new-patients" class="btn btn-primary" style="margin-top:14px;border:none;">Request Appointment</a>
 </div>
@@ -544,6 +540,74 @@
         <span>— Jessica Z., patient</span>
       </div>
       <a href="#team" class="btn btn-ghost">Meet the doctors →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEAM ===== -->
+<section id="team">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;">Meet the team</div>
+      <h2>Doctors who live what they teach</h2>
+      <p class="lede">Five doctors in Longview, specialized in lifestyle, pediatric, prenatal, athletic care, and injury recovery.</p>
+    </div>
+    <img class="team-banner reveal" src="images/team-full-staff-group.jpg" alt="The full Advantage Chiropractic team, doctors and staff, standing together outside the Longview office">
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <div class="team-photo" style="background-image:url('images/dr-anik-st-martin.jpg');"></div>
+        <div class="team-body">
+          <h3>Dr. Anik St Martin, DC, DACCP</h3>
+          <span class="team-role">Pediatric Chiropractic Diplomate</span>
+          <p>25 years in practice in Longview. Cum Laude graduate of New York Chiropractic College; certified through the International Chiropractic Pediatric Association.</p>
+          <span class="loc-tag">📍 Longview</span>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-photo" style="background-image:url('images/dr-darin-shook.jpg');"></div>
+        <div class="team-body">
+          <h3>Dr. Darin Shook, DC</h3>
+          <span class="team-role">Chiropractor</span>
+          <p>Practicing in Longview since 2001. Believes everybody lives a better life with chiropractic care — avid skier, ultra marathoner and mountain biker.</p>
+          <span class="loc-tag">📍 Longview</span>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-photo" style="background-image:url('images/dr-john-dobosz.png');"></div>
+        <div class="team-body">
+          <h3>Dr. John Dobosz, DC</h3>
+          <span class="team-role">Chiropractor</span>
+          <p>National board certified; doctorate from University of Western States (2011). Believer in weekly adjustments, clean nutrition and daily movement.</p>
+          <span class="loc-tag">📍 Longview</span>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-photo" style="background-image:url('images/dr-jay-carlile.jpg');"></div>
+        <div class="team-body">
+          <h3>Dr. Jay Carlile, DC</h3>
+          <span class="team-role">Chiropractor</span>
+          <p>Former state champion powerlifter and wrestler. Trained in Gonstead, Thompson and Activator techniques after his own recovery from injury.</p>
+          <span class="loc-tag">📍 Longview</span>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-photo" style="background-image:url('images/dr-darryl-coulombe.jpg');"></div>
+        <div class="team-body">
+          <h3>Dr. Darryl Coulombe, DC</h3>
+          <span class="team-role">Chiropractor</span>
+          <p>Found his purpose with chiropractic. Dr. Darryl's mission is to show people what an optimal life looks like and teach them how to achieve it.</p>
+          <span class="loc-tag">📍 Longview</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-staff reveal">
+      <div class="staff-chip"><div class="init" style="background-image:url('images/miranda-dietrich.jpg');"></div><b>Miranda Dietrich</b><span>Office Manager</span></div>
+      <div class="staff-chip"><div class="init" style="background-image:url('images/amanda-little.jpg');"></div><b>Amanda Little</b><span>Billing Specialist</span></div>
+      <div class="staff-chip"><div class="init" style="background-image:url('images/heather-blehm.jpg');"></div><b>Heather Blehm</b><span>Lead Front Desk</span></div>
+      <div class="staff-chip"><div class="init" style="background-image:url('images/talia-raney.jpg');"></div><b>Talia Raney</b><span>Front Desk</span></div>
+      <div class="staff-chip"><div class="init" style="background-image:url('images/kelcey-kyllonen.jpg');"></div><b>Kelcey Kyllonen</b><span>Front Desk / X-Ray Tech</span></div>
+      <div class="staff-chip"><div class="init" style="background-image:url('images/nyah-hartley.jpg');"></div><b>Nyah Hartley</b><span>Front Desk</span></div>
     </div>
   </div>
 </section>
@@ -631,7 +695,7 @@
 
     </div>
     <div class="svc-more reveal">
-      <button type="button" class="btn btn-ghost" id="conditionsBtn" aria-expanded="false" aria-controls="conditionsPanel">Additional conditions we help with →</button>
+      <button type="button" class="btn btn-ghost" id="conditionsBtn" aria-expanded="false" aria-controls="conditionsPanel">Additional Conditions We Help With →</button>
       <div class="conditions-panel" id="conditionsPanel">
         <p class="conditions-intro">We can't claim to "treat" specific conditions — but here's what patients come to us for, and what we've helped thousands of people work through:</p>
         <div class="conditions-grid">
@@ -692,74 +756,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== TEAM ===== -->
-<section id="team">
-  <div class="wrap">
-    <div class="section-head center reveal">
-      <div class="eyebrow" style="justify-content:center;">Meet the team</div>
-      <h2>Doctors who live what they teach</h2>
-      <p class="lede">Five doctors in Longview, specialized in lifestyle, pediatric, prenatal, athletic care, and injury recovery.</p>
-    </div>
-    <img class="team-banner reveal" src="images/team-full-staff-group.jpg" alt="The full Advantage Chiropractic team, doctors and staff, standing together outside the Longview office">
-    <div class="team-grid">
-      <div class="team-card reveal">
-        <div class="team-photo" style="background-image:url('images/dr-anik-st-martin.jpg');"></div>
-        <div class="team-body">
-          <h3>Dr. Anik St Martin, DC, DACCP</h3>
-          <span class="team-role">Pediatric Chiropractic Diplomate</span>
-          <p>25 years in practice in Longview. Cum Laude graduate of New York Chiropractic College; certified through the International Chiropractic Pediatric Association.</p>
-          <span class="loc-tag">📍 Longview</span>
-        </div>
-      </div>
-      <div class="team-card reveal">
-        <div class="team-photo" style="background-image:url('images/dr-darin-shook.jpg');"></div>
-        <div class="team-body">
-          <h3>Dr. Darin Shook, DC</h3>
-          <span class="team-role">Chiropractor</span>
-          <p>Practicing in Longview since 2001. Believes everybody lives a better life with chiropractic care — avid skier, ultra marathoner and mountain biker.</p>
-          <span class="loc-tag">📍 Longview</span>
-        </div>
-      </div>
-      <div class="team-card reveal">
-        <div class="team-photo" style="background-image:url('images/dr-john-dobosz.png');"></div>
-        <div class="team-body">
-          <h3>Dr. John Dobosz, DC</h3>
-          <span class="team-role">Chiropractor</span>
-          <p>National board certified; doctorate from University of Western States (2011). Believer in weekly adjustments, clean nutrition and daily movement.</p>
-          <span class="loc-tag">📍 Longview</span>
-        </div>
-      </div>
-      <div class="team-card reveal">
-        <div class="team-photo" style="background-image:url('images/dr-jay-carlile.jpg');"></div>
-        <div class="team-body">
-          <h3>Dr. Jay Carlile, DC</h3>
-          <span class="team-role">Chiropractor</span>
-          <p>Former state champion powerlifter and wrestler. Trained in Gonstead, Thompson and Activator techniques after his own recovery from injury.</p>
-          <span class="loc-tag">📍 Longview</span>
-        </div>
-      </div>
-      <div class="team-card reveal">
-        <div class="team-photo" style="background-image:url('images/dr-darryl-coulombe.jpg');"></div>
-        <div class="team-body">
-          <h3>Dr. Darryl Coulombe, DC</h3>
-          <span class="team-role">Chiropractor</span>
-          <p>Found his purpose with chiropractic. Dr. Darryl's mission is to show people what an optimal life looks like and teach them how to achieve it.</p>
-          <span class="loc-tag">📍 Longview</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="team-staff reveal">
-      <div class="staff-chip"><div class="init" style="background-image:url('images/miranda-dietrich.jpg');"></div><b>Miranda Dietrich</b><span>Office Manager</span></div>
-      <div class="staff-chip"><div class="init" style="background-image:url('images/amanda-little.jpg');"></div><b>Amanda Little</b><span>Billing Specialist</span></div>
-      <div class="staff-chip"><div class="init" style="background-image:url('images/heather-blehm.jpg');"></div><b>Heather Blehm</b><span>Lead Front Desk</span></div>
-      <div class="staff-chip"><div class="init" style="background-image:url('images/talia-raney.jpg');"></div><b>Talia Raney</b><span>Front Desk</span></div>
-      <div class="staff-chip"><div class="init" style="background-image:url('images/kelcey-kyllonen.jpg');"></div><b>Kelcey Kyllonen</b><span>Front Desk / X-Ray Tech</span></div>
-      <div class="staff-chip"><div class="init" style="background-image:url('images/nyah-hartley.jpg');"></div><b>Nyah Hartley</b><span>Front Desk</span></div>
     </div>
   </div>
 </section>
@@ -970,6 +966,16 @@
           <p class="event-note">Dates, times and pricing are set on Eventbrite — verify current details before planning around this.</p>
         </div>
       </div>
+      <div class="event-card reveal">
+        <div class="event-img" style="background-image:url('images/blog-the-long-game.jpg');"></div>
+        <div class="event-body">
+          <span class="event-tag">Wellness class · with Dr. Jay Carlile, DC</span>
+          <h3>Regaining Your Youth &amp; Vitality Workshop</h3>
+          <p>Take control of your health for you and your family!</p>
+          <a href="#contact" class="btn btn-ghost btn-sm">Ask about this class →</a>
+          <p class="event-note">Free event, generally held Wednesdays from 6:15–7:15pm at Advantage Chiropractic in Longview, WA. Multiple dates and times are set on Eventbrite — verify current details before planning around this.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -983,7 +989,7 @@
       <p class="lede">Notes on healing, patience and the long game of staying well &mdash; written by our own Dr. Anik St Martin.</p>
     </div>
     <div class="blog-grid">
-      <article class="blog-card reveal">
+      <article class="blog-card reveal" id="blog-six-week-rule">
         <div class="blog-img" style="background-image:url('images/blog-six-to-eight-week-rule.jpg');"></div>
         <div class="blog-body">
           <span class="blog-tag">Blog &middot; by Dr. Anik St Martin, DC, DACCP</span>
@@ -1002,7 +1008,7 @@
           <button type="button" class="btn btn-ghost btn-sm blog-toggle" data-target="blogFull1" aria-expanded="false">Read full article &rarr;</button>
         </div>
       </article>
-      <article class="blog-card reveal">
+      <article class="blog-card reveal" id="blog-long-game">
         <div class="blog-img" style="background-image:url('images/blog-the-long-game.jpg');"></div>
         <div class="blog-body">
           <span class="blog-tag">Blog &middot; by Dr. Anik St Martin, DC, DACCP</span>
@@ -1019,37 +1025,6 @@
           <button type="button" class="btn btn-ghost btn-sm blog-toggle" data-target="blogFull2" aria-expanded="false">Read full article &rarr;</button>
         </div>
       </article>
-    </div>
-  </div>
-</section>
-
-<!-- ===== LOCATIONS ===== -->
-<section id="locations" class="locations">
-  <div class="wrap">
-    <div class="section-head center reveal">
-      <div class="eyebrow" style="justify-content:center;">Our office</div>
-      <h2>Visit us in Longview</h2>
-      <p class="lede">Five providers, 25+ years serving the Longview community.</p>
-    </div>
-    <div class="loc-grid">
-      <div class="loc-card reveal">
-        <div class="loc-map"><iframe loading="lazy" src="https://www.google.com/maps?q=1312+Vandercook+Way,+Longview,+WA+98632&output=embed" title="Longview office map"></iframe></div>
-        <div class="loc-body">
-          <span class="loc-badge">Flagship office · 25 years in Longview</span>
-          <h3>Longview</h3>
-          <p class="loc-addr">1312 Vandercook Way, Longview, WA 98632</p>
-          <a class="loc-phone" href="tel:3604256620">(360) 425-6620</a>
-          <table class="hours-table">
-            <tr><td>Monday</td><td>9:00am – 4:00pm</td></tr>
-            <tr><td>Tuesday</td><td>9:00am–12pm, 3–6pm</td></tr>
-            <tr><td>Wednesday</td><td>9–1:30pm, 3–6pm</td></tr>
-            <tr><td>Thursday</td><td>9–1:30pm, 3–6pm</td></tr>
-            <tr><td>Friday</td><td>8:00am – 5:00pm</td></tr>
-            <tr><td>Sat &amp; Sun</td><td>Closed</td></tr>
-          </table>
-          <a href="https://www.google.com/maps/dir/?api=1&destination=1312+Vandercook+Way,+Longview,+WA+98632" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Get Directions</a>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -1098,6 +1073,27 @@
       <div class="form-success" id="formSuccess">✓ Thanks! In the live site, this would send your message to our team.</div>
     </form>
   </div>
+
+  <div class="wrap" style="margin-top:50px;max-width:640px;">
+    <div class="loc-card reveal">
+      <div class="loc-map"><iframe loading="lazy" src="https://www.google.com/maps?q=1312+Vandercook+Way,+Longview,+WA+98632&output=embed" title="Longview office map"></iframe></div>
+      <div class="loc-body">
+        <span class="loc-badge">Flagship office · 25 years in Longview</span>
+        <h3>Visit us in Longview</h3>
+        <p class="loc-addr">1312 Vandercook Way, Longview, WA 98632</p>
+        <a class="loc-phone" href="tel:3604256620">(360) 425-6620</a>
+        <table class="hours-table">
+          <tr><td>Monday</td><td>9:00am – 4:00pm</td></tr>
+          <tr><td>Tuesday</td><td>9:00am–12pm, 3–6pm</td></tr>
+          <tr><td>Wednesday</td><td>9–1:30pm, 3–6pm</td></tr>
+          <tr><td>Thursday</td><td>9–1:30pm, 3–6pm</td></tr>
+          <tr><td>Friday</td><td>8:00am – 5:00pm</td></tr>
+          <tr><td>Sat &amp; Sun</td><td>Closed</td></tr>
+        </table>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=1312+Vandercook+Way,+Longview,+WA+98632" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Get Directions</a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- ===== CTA BAND ===== -->
@@ -1118,9 +1114,9 @@
     <div class="foot-grid">
       <div>
         <div class="foot-logo">
-          <img src="https://myadvantagechiro.com/wp-content/uploads/2023/09/Chiropractic-Longview-WA-Advantage-Chiropractic-SB-Logo.webp" alt="Advantage Chiropractic" style="height:38px;width:auto;filter:brightness(0) invert(1);opacity:.9;">
+          <img src="https://myadvantagechiro.com/wp-content/uploads/2023/09/Chiropractic-Longview-WA-Advantage-Chiropractic-SB-Logo.webp" alt="Advantage Chiropractic" style="height:46px;width:auto;filter:brightness(0) invert(1);opacity:.9;">
         </div>
-        <p style="max-width:280px;color:#E9E1D7;">Drug-free chiropractic and family wellness care in Longview, WA. We invite you to contact us today.</p>
+        <p style="max-width:280px;color:#E9E1D7;">Drug-free chiropractic and family wellness care in Longview, WA. We invite you to contact us today. Our intent is to help as many people as possible, especially children, with safe and natural healthcare.</p>
       </div>
       <div>
         <h4>Explore</h4>
@@ -1130,22 +1126,29 @@
           <li><a href="#team">Meet the Team</a></li>
           <li><a href="#new-patients">New Patients</a></li>
           <li><a href="#events">Events</a></li>
-          <li><a href="#blog">Blog</a></li>
         </ul>
       </div>
       <div>
-        <h4>Location</h4>
+        <h4>Blog/Vlog</h4>
         <ul>
-          <li><a href="#locations">Longview, WA</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#blog-six-week-rule">The &ldquo;Six-to-Eight Week&rdquo; Rule</a></li>
+          <li><a href="#blog-long-game">The Long Game of Health</a></li>
+          <li><a href="#blog">View All Articles</a></li>
         </ul>
       </div>
       <div>
         <h4>Contact</h4>
         <ul>
+          <li>Advantage Chiropractic</li>
+          <li>1312 Vandercook Way</li>
+          <li>Longview, WA 98632</li>
           <li><a href="tel:3604256620">(360) 425-6620</a></li>
           <li><a href="sms:contact@myadvantagechiro.com">Text Us</a></li>
         </ul>
+        <div class="social-row" style="margin-top:16px;">
+          <a href="https://www.facebook.com/myadvantagechiro/" target="_blank" rel="noopener" aria-label="Advantage Chiropractic on Facebook (opens in new tab)"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" aria-hidden="true"><path d="M15 3h-2a5 5 0 0 0-5 5v2H6v4h2v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/myadvantagechiro/" target="_blank" rel="noopener" aria-label="Advantage Chiropractic on Instagram (opens in new tab)"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        </div>
       </div>
     </div>
     <div class="foot-bottom">
@@ -1191,7 +1194,7 @@
     condBtn.addEventListener('click', () => {
       const open = condPanel.classList.toggle('open');
       condBtn.setAttribute('aria-expanded', open);
-      condBtn.textContent = open ? 'Hide conditions list ↑' : 'Additional conditions we help with →';
+      condBtn.textContent = open ? 'Hide conditions list ↑' : 'Additional Conditions We Help With →';
     });
   }
 
